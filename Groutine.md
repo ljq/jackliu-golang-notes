@@ -1,4 +1,4 @@
-# Golang使用语言层面process进程（Groutine）处理并发Task任务的个人思考随想
+# Golang不使用OS层process而使用语言层面（Groutine）处理并发Task任务方案的个人思考随想
 
 1.实用语言层面进程管理，成本低廉，但对CPU的性能开销比较大，通过Groutine的引入，可以将并发处理任务放在语言层面内部，“隔离“在系统层面，构建Groutines池的同时，也能保证在性能可靠的前提下，安全性也增强。
 
