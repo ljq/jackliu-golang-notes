@@ -18,8 +18,8 @@ Goroutine并发执行的模式，不放在系统进程处理，好处：
 
 云计算追求对服务端在安全可控的前提下软硬件资源的最低成本配置和最佳的资源调度，做的所有分布式、自由伸缩、集群的重要原因也是源为此，Goroutines在这方面大有可为。  
 
-官方一句话说得比较直白和代表性：
-Do not communicate by sharing memory; instead, share memory by communicating.
+官方一句话说得比较直白和代表性：  
+Do not communicate by sharing memory; instead, share memory by communicating.  
 不要通过共享内存进行通信，而是通过通信共享内存。  
 
 这个应该不是说以前的方案或其他语言处理思路是错误、不佳或有偏差的，历史上很多方案往往受制于硬件的运算性能综合因素考虑，是当时权衡下来的最好的方案，比如硬件成本太高等，现在随着软硬件的快速发展和成本低廉有这个条件来做这个事情了。  
