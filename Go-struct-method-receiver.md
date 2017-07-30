@@ -1,5 +1,5 @@
 
-# 关于Go语言:结构体(Struct)-方法(Method)-接收者(Receiver)类型的适用场景选择和命名约定(Golang.org官方建议)
+# 关于Go语言:结构体(Struct)-方法(Method)-接收者(Receiver)类型的适用场景选择和命名约定(Go官方建议)
 
 
 ### 何时使用值类型场景
