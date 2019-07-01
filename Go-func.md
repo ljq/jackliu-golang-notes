@@ -8,7 +8,7 @@ import (
     "fmt"
 )
 func foo() {
-    fmt.Println("fire")
+    fmt.Println("foo")
 }
 func main() {
     var f func()
