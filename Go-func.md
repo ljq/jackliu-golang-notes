@@ -36,6 +36,32 @@ func (f FuncCaller) Call(p interface{}) {
 //以上函数类型，需要函数本身进行逻辑处理。FuncCaller 无须被实例化，只需要将函数转换为 ///FuncCaller 类型即可，函数来源可以是命名函数、匿名函数或闭包
 ```
 
+###### 典型HTTP实现：
+函数 handler() 转为 HandlerFunc 类型，HandlerFunc 类型实现了 Handler 的 ServeHTTP 方法，底层可以同时使用各种类型来实现 Handler 接口进行处理。
+```
+HTTP 包中包含有 Handler 接口定义，代码如下：
+type Handler interface {
+    ServeHTTP(ResponseWriter, *Request)
+}
+Handler 用于定义每个 HTTP 的请求和响应的处理过程。
+
+同时，也可以使用处理函数实现接口，定义如下：
+type HandlerFunc func(ResponseWriter, *Request)
+func (f HandlerFunc) ServeHTTP(w ResponseWriter, r *Request) {
+    f(w, r)
+}
+要使用闭包实现默认的 HTTP 请求处理，可以使用 http.HandleFunc() 函数，函数定义如下：
+func HandleFunc(pattern string, handler func(ResponseWriter, *Request)) {
+    DefaultServeMux.HandleFunc(pattern, handler)
+}
+而 DefaultServeMux 是 ServeMux 结构，拥有 HandleFunc() 方法，定义如下：
+func (mux *ServeMux) HandleFunc(pattern string, handler func
+(ResponseWriter, *Request)) {
+    mux.Handle(pattern, HandlerFunc(handler))
+}
+上面代码将外部传入的函数 handler() 转为 HandlerFunc 类型，HandlerFunc 类型实现了 Handler 的 ServeHTTP 方法，底层可以同时使用各种类型来实现 Handler 接口进行处理。
+
+```
 
 
 ##### Go可变参数函数调用注意事项（three dots）
