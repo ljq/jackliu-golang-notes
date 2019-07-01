@@ -1,11 +1,29 @@
 ### func函数（适用于method）小结
 
-##### Golang可变参数函数调用注意事项（three dots）
+##### Go函数
+数也是一种类型，可以和其他类型一样被保存在变量中。和接口一样，接口也是一种类型。
+```
+package main
+import (
+    "fmt"
+)
+func foo() {
+    fmt.Println("fire")
+}
+func main() {
+    var f func()
+    f = foo
+    f()
+}
+
+```
+
+##### Go可变参数函数调用注意事项（three dots）
 
 * 若将 string 数组切片，每项独自传入函数，则会执行[]T{arg1,arg2}等类似操作，从新进行初始化；
 * 若将 interface{} 数组切片打散后直接传入函数，则不再进行对象的创建，直接试用该对象；
 
-### Golang ... three dots 用法：
+### Go ... three dots 用法：
 
 ##### 变长的函数参数（逐一传参用法）
 调用参数最后一个...T，在参数列表的最后使用若干个类型为T的参数。
