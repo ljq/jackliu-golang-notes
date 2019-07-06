@@ -7,6 +7,6 @@
 | :------ | :---------- |
 | Author | Jack Liu 秋 |
 | Email | stackgo@163.com |
-| Wechat | laulinux |
+| WeChat | laulinux |
 | QQ | 404691073 |
 | Blog | https://iddd.top |
