@@ -50,7 +50,7 @@ for i, v := range t {
  ```
 
 ###### 原因：
-* []interface{}类型 **不是** interface{}类型， 它是一个切片，切片元素的类型恰好是interface{}。但即便这样解释，有人可能仍然觉  得前面的用法没毛病。
+* []interface{}类型 **不是** interface{}类型， 它是一个切片，切片元素的类型恰好是interface{}。
 * []interface{}类型变量拥有特定的内存结构，这在编译时就已经决定。每个interface{}占两个字（word)，一个字用于存放interface存放的类型，另一个字用于存放实际数据或者是指向数据的指针。于是长度为N的[]interface{}类型切片背后是一个N*2字长的一块数据。   
 这与一般的[]MyType类型切片不同，相同长度的[]MyType切片背后的数据块大小为N*sizeof(MyType)字长。   
 
