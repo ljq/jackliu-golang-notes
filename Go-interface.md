@@ -93,11 +93,11 @@ func main() {
 	fmt.Printf("%T %v", p, p)
 }
 
-
-People接口本身，底层含有tab虚表和data实际存储的值两部分；  
-p := People(Student{1, "Jack"})//此是合法的，本质：  
-**通过接口进行函数调用** ，实际的操作其实就是p.tab->fun[0](p.data);
 ```
+
+People接口本身，底层含有tab虚表和data实际存储的值两部分；    
+```p := People(Student{1, "Jack"})//此是合法的```，本质：    
+**通过接口进行函数调用** ，实际的操作其实就是```p.tab->fun[0](p.data)```;  
 
 ###### 参考Go和C++的虚表的异同：
 * C++：
