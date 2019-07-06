@@ -3,7 +3,7 @@
 #### Jack Liu's Golang personal summary notes Go笔记要点学习总结梳理
 
 #### Jack Liu's contact
-| Item  | Data |
+| Item  | Contact |
 | :------ | :---------- |
 | Author | Jack Liu 秋 |
 | Email | stackgo@163.com |
