@@ -65,6 +65,25 @@ interface在内存上实际由两个成员组成
 * data则指向实际引用的数据。
 * 虚表描绘了实际的类型信息及该接口所需要的方法集。
 
+
+接口的底层结构
+runtime.h
+```
+struct Iface
+{
+	Itab* tab;
+	void* data;
+};
+
+struct Itab
+{
+	InterfaceType* inter;
+	Type* type;
+	void (*fun[])(void);
+};
+```
+
+接口Demo：
 ```
 package main
 
