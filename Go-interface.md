@@ -81,6 +81,14 @@ struct Itab
 	Type* type;
 	void (*fun[])(void);
 };
+
+struct Itab
+{
+	InterfaceType* inter;
+	Type* type;
+	void (*fun[])(void);
+};
+
 ```
 
 接口Demo：
