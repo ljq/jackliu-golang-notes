@@ -89,6 +89,7 @@ struct Itab
 	void (*fun[])(void);
 };
 
+//只有 tab 和 data 都为 nil 时，接口才等于 nil。
 ```
 
 接口Demo：
