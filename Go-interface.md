@@ -48,6 +48,11 @@ for i, v := range t {
  s[i] = v 
 }
  ```
+###### 接口转换
+* 利用类型推断，可判断接口对象是否某个具体的接口或类型。  
+* 还可用 switch 做批量类型判断，不支持 fallthrough。  
+* 超集接口对象可转换为子集接口，反之出错。  
+
 
 ###### 原因：
 * []interface{}类型 **不是** interface{}类型， 它是一个切片，切片元素的类型恰好是interface{}。
@@ -143,3 +148,23 @@ People接口本身，底层含有tab虚表和data实际存储的值两部分；
 * Go接口组合的方案和C++反其道而行之，本质上来说，各有优缺点。
 
 
+
+### 接口技巧
+让编译器检查，以确保某个类型实现接口。
+``` var _ fmt.Stringer = (*Data)(nil) ```
+
+某些时候，让函数直接 "实现" 接口能省不少事。
+```
+type Tester interface {
+	Do()
+}
+
+type FuncDo func()
+func (self FuncDo) Do() { self() }
+
+func main() {
+	var t Tester = FuncDo(func() { println("Hello, World!") })
+	t.Do()
+}
+
+```
