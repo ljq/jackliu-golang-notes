@@ -8,3 +8,4 @@
     * 按照import导入顺序调用包中init()
     * package的init()在被引用时自动被调用
     * package存在依赖，调用顺序为最后被依赖的最先被执行初始化
+    * package被其他多个包import，只能被初始化一次
