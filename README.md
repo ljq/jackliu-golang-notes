@@ -10,3 +10,6 @@
 | WeChat | laulinux |
 | QQ | 404691073 |
 | Blog | https://iddd.top |
+
+
+###### I love Go，Simple, efficient, practical, engineered ...
