@@ -3,9 +3,9 @@
 
 ### 常用拼接方法
 
-* 第一种: += 来拼接
-* 第二种: bytes.Buffer
-* 第三种: strings.Builder ( >= go1.10 )
+* += 来拼接
+* bytes.Buffer
+* strings.Builder ( >= go1.10 )
 
 ### 拼接方法性能对比
 
