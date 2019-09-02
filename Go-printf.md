@@ -1,4 +1,4 @@
-# mt.Printf() 格式化占位符
+# fmt.Printf() 格式化占位符
 
 # 格式符 ```fmt.Printf("%v", variable)```
 
