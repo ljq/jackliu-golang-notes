@@ -16,7 +16,7 @@ mp2 := make(map[int]*[]int)
 
 只遍历键KEY时，使用下面的形式,无须将值改为匿名变量形式，忽略值即可:  
 ```
-for key := range mapdata {
+for key := range mapData {
     //Code ...
 }
 ```
@@ -25,3 +25,25 @@ map清空：
 无相关函数和方法。截至Go 1.12，清空唯一办法就是重新 make 一个新的 map。  
 但担心垃圾回收的效率，Go的GC的回收效率远高于一个清空函数。
 
+### map并发安全
+
+###### sync.Map有以下特性：
+
+* 无须初始化，直接声明即可。
+* sync.Map 不能使用 map 的方式进行取值和设置等操作，而是使用 sync.Map 的方法进行调用。
+    * Store 表示存储，
+    * Load 表示获取，
+    * Delete 表示删除。
+* 遍历操作 Range加回调函数，回调函数返回内部遍历出来的值。
+* Range 参数中的回调函数的返回值功能是：
+    * 需要继续迭代遍历时，返回 true；
+    * 终止迭代遍历时，返回false。
+
+```
+#遍历所有sync.Map中的键值对
+mapData.Range(func(k, v interface{}) bool {
+    fmt.Println("list-kv: %v , %v", k, v)
+    return true
+})
+
+```
