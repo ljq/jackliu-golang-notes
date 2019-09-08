@@ -40,6 +40,10 @@ map清空：
     * 终止迭代遍历时，返回false。
 
 ```
+#定义
+var mapData sync.Map
+
+
 #遍历所有sync.Map中的键值对
 mapData.Range(func(k, v interface{}) bool {
     fmt.Println("list-kv: %v , %v", k, v)
