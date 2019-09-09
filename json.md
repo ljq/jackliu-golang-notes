@@ -1,4 +1,6 @@
-##### json.Marshal()  
+# JSON
+
+### json.Marshal()  
 默认转换规则：  
 1.布尔型转换为 JSON 后仍是布尔型　， 如true -> true  
 2.浮点型和整数型转换后为JSON里面的常规数字，如 1.23 -> 1.23  
@@ -11,7 +13,7 @@
 ___
 
 
-##### json.Unmarshal()    
+### json.Unmarshal()    
 注意：如果JSON中的字段在Go目标类型中不存在，json.Unmarshal() 函数在解码过程中会丢弃该字段。   
 未知类型,遵循规则：   
 1.JSON中的布尔值将会转换为Go中的bool类型  

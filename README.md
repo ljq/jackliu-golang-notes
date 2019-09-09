@@ -1,6 +1,6 @@
 # Jack Liu's Golang personal summary combing notes
 
-#### Jack Liu's Golang personal summary notes Go笔记要点学习总结梳理
+#### Jack Liu's Golang personal summary notes Go
 
 #### Jack Liu's contact
 | Item  | Contact |
@@ -13,3 +13,5 @@
 
 
 ###### I love Go，Simple, efficient, practical, engineered ...
+
+###### The world of programming should be pluralistic, free from any one mindset. 

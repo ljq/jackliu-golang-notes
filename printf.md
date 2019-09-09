@@ -1,6 +1,6 @@
 # fmt.Printf() 格式化占位符
 
-# 格式符 ```fmt.Printf("%v", variable)```
+### 格式符 ```fmt.Printf("%v", variable)```
 
 ```
 # 【通用占位符】

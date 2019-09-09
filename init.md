@@ -1,3 +1,5 @@
+# init()
+
 ### init()函数特性
 
 * init()在main包执行之前

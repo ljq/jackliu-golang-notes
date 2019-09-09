@@ -1,3 +1,5 @@
+# func 函数
+
 ### func函数（适用于method）小结
 
 ##### Go函数
@@ -38,7 +40,7 @@ func (f FuncCaller) Call(p interface{}) {
 
 ```
 
-###### HTTP实现场景：
+##### HTTP实现场景：
 函数 handler() 转为 HandlerFunc 类型，HandlerFunc 类型实现了 Handler 的 ServeHTTP 方法，  
 底层可以同时使用各种类型来实现 Handler 接口进行处理。
 ```

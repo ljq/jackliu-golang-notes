@@ -1,3 +1,5 @@
+# null judge
+
 ### int空值是0，
 
 ### string空值是””而不是null或者nil（区别于其他语言），

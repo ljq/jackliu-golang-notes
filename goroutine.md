@@ -1,4 +1,6 @@
-# Golang不使用OS层process而使用语言层面（Goroutine）处理 并发 & 并行 Task任务方案(针对业务来说)的个人思考和实践思路随想 ---Jack Liu 秋
+# goroutine
+
+###  Golang不使用OS层process而使用语言层面（Goroutine）处理 并发 & 并行 Task任务方案(针对业务来说)的个人思考和实践思路随想 ---Jack Liu 秋
 
 1.使用OS层面进程管理，虽然成本低廉快捷，但对CPU的性能开销比较大，Golang通过Goroutine的引入，构建一种SandBox沙箱容器式的方案，可以将并发处理任务放在语言层面内部，“隔离“在系统层面之上，构建Goroutine池的同时，也能保证在性能可靠的前提下，安全性也增强。   
 目前大规模分布式系统的整体方向，大部分也都是建立在OS系统层之上(而非系统层面)以达到可控的标准控制，将OS系统级内核CPU的开销降到最低保证OS层流畅运行，这也让Linux为代表的服务器OS系统更“专注”做Base底层基础性的业务支撑。
@@ -36,7 +38,7 @@ Golang设计哲学和Unix应该是一致的：大道至简，“简”是对大�
 
 至少在公司产品和项目开发中，Golang至少是未来主力的语言，因为随着数据的不断增长，必须要一种从性能上，可靠性上和开发上相对最合适的技术选型，Golang是很符合这一点的，Golang不只是一个简单的编程语言这么简单。  
 C系的开发语言经久不衰很重要的原因就是追求用最简单的方式解决现实问题，Golang是未来考虑的主力开发语言。  
-## 个人实践思路示意：
- ![image](https://github.com/q89/jackliu-go-programming-note/blob/master/Go-done-mode.jpg)
+### 个人实践思路示意：
+ ![image](https://github.com/iotd/jackliu-golang-notes/blob/master/done-mode.jpg)
 
                                                                   --------- Jack Liu 秋    Date：2017-05-30
