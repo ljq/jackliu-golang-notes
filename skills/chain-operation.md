@@ -42,9 +42,7 @@ func (p *A) Print()  {
 }
 
 func main() {
-	varA := &A{}
-	//链式调用实际是：
-    //  （函数OR方法）操作 =》 返回对象 =》（对象所属函数OR方法）下一步操作
+    varA := &A{}
     varA.SetAa("Aa").SetAb(100).Print()
 }
 
