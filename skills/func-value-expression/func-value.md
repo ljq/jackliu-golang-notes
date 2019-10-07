@@ -9,33 +9,35 @@
 
 方法值的本质是调用时隐藏了接收者，和传统调用是等价的；
 
+
+
 ```
 package main
 
 import "fmt"
 
-type Person struct {
+type A struct {
     name string
-    sex byte
-    age int
 }
 
-func (p Person) SetInfoValue ()  {
-    fmt.Printf("SetInfoValue: %p, %v\n", &p, p)
-}
-
-func (p *Person) SetInfoValuePointer ()  {
-    fmt.Printf("SetInfoValuePointer: %p, %v\n", p, p)
+func (a *A) SetValue ()  {
+    fmt.Println("set")
 }
 
 func main() {
-    p := Person{"mike", 'm', 18}
-    fmt.Printf("main: %p, %v\n", &p, p)
-    p.SetInfoValuePointer()//传统调用方式
-    pFunc := p.SetInfoValuePointer //这个就是方法值，调用函数时，无需再传递接收者，隐藏了接收者
-    pFunc() //等价于p.SetInfoPointer()
-    
-    vFunc := p.SetInfoValue  //这里完成内容拷贝的操作
+    aa := A{"jack"}
+    //传统调用
+    aa.SetValue()
+
+    //方法值，调用时隐藏接收者
+    vFunc := aa.SetValue
     vFunc()
+	
+    //方法表达式，调用时隐藏接收者
+    aFunc := (*A).SetValue
+
+    //显式传递接收者,等价于aa.SetValue()
+    aFunc(&aa)
 }
+
 ```
