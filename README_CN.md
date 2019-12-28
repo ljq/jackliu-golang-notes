@@ -10,3 +10,11 @@
 | WeChat | laulinux |
 | QQ | 404691073 |
 | Blog | https://iddd.top |
+
+#### zh_CN 中文文档
+
+(zh_CN)[https://github.com/iotd/jackliu-golang-notes/tree/master/zh_CN]
+
+#### EN English Documents
+
+(English)[https://github.com/iotd/jackliu-golang-notes/tree/master/EN]

@@ -17,8 +17,8 @@
 ###### The world of programming should be pluralistic, free from any one mindset. 
 
 #### EN English Documents
-(English)[https://github.com/iotd/jackliu-golang-notes/EN]
+(English)[https://github.com/iotd/jackliu-golang-notes/tree/master/EN]
 
 #### zh_CN 中文文档
 
-(zh_CN)[https://github.com/iotd/jackliu-golang-notes/zh_CN]
+(zh_CN)[https://github.com/iotd/jackliu-golang-notes/tree/master/zh_CN]
