@@ -11,9 +11,10 @@
 | QQ | 404691073 |
 | Blog | https://iddd.top |
 
-#### zh_CN 中文文档
-[中文文档](https://github.com/iotd/jackliu-golang-notes/tree/master/zh_CN)
+#### zh_CN 中文
+[README_CN](https://github.com/iotd/jackliu-golang-notes/tree/master/zh_CN)
 
 #### EN English Documents
 [English Documents](https://github.com/iotd/jackliu-golang-notes/tree/master/EN)
+
 
