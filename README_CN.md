@@ -12,9 +12,8 @@
 | Blog | https://iddd.top |
 
 #### zh_CN 中文文档
-
-(zh_CN)[https://github.com/iotd/jackliu-golang-notes/tree/master/zh_CN]
+[中文文档](https://github.com/iotd/jackliu-golang-notes/tree/master/zh_CN)
 
 #### EN English Documents
+[English Documents](https://github.com/iotd/jackliu-golang-notes/tree/master/EN)
 
-(English)[https://github.com/iotd/jackliu-golang-notes/tree/master/EN]
