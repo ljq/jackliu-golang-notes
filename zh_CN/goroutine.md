@@ -39,6 +39,6 @@ Golang设计哲学和Unix应该是一致的：大道至简，“简”是对大�
 至少在公司产品和项目开发中，Golang至少是未来主力的语言，因为随着数据的不断增长，必须要一种从性能上，可靠性上和开发上相对最合适的技术选型，Golang是很符合这一点的，Golang不只是一个简单的编程语言这么简单。  
 C系的开发语言经久不衰很重要的原因就是追求用最简单的方式解决现实问题，Golang是未来考虑的主力开发语言。  
 ### 个人实践思路示意：
- ![image](https://github.com/iotd/jackliu-golang-notes/blob/master/done-mode.jpg)
+ ![image](https://github.com/iotd/jackliu-golang-notes/blob/master/zh_CN/done-mode.jpg)
 
                                                                   --------- Jack Liu 秋    Date：2017-05-30

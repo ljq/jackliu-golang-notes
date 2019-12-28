@@ -5,7 +5,7 @@
 #### Jack Liu's contact
 | Item  | Contact |
 | :------ | :---------- |
-| Author | Jack Liu 秋 |
+| Author | Jack Liu |
 | Email | stackgo@163.com |
 | WeChat | laulinux |
 | QQ | 404691073 |
@@ -15,3 +15,10 @@
 ###### I love Go，Simple, efficient, practical, engineered ...
 
 ###### The world of programming should be pluralistic, free from any one mindset. 
+
+#### EN English Documents
+(English)[https://github.com/iotd/jackliu-golang-notes/EN]
+
+#### zh_CN 中文文档
+
+(zh_CN)[https://github.com/iotd/jackliu-golang-notes/zh_CN]
