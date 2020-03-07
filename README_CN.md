@@ -9,7 +9,7 @@
 | Email | stackgo@163.com |
 | WeChat | laulinux |
 | QQ | 404691073 |
-| Blog | https://iddd.top |
+| Blog | https://wdft.com |
 
 #### zh_CN 中文
 [README_CN](https://github.com/iotd/jackliu-golang-notes/tree/master/zh_CN)

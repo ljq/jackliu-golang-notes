@@ -9,7 +9,7 @@
 | Email | stackgo@163.com |
 | WeChat | laulinux |
 | QQ | 404691073 |
-| Blog | https://iddd.top |
+| Blog | https://wdft.com |
 
 
 ###### I love Go，Simple, efficient, practical, engineered ...
