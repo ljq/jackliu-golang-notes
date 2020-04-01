@@ -11,6 +11,8 @@
 | QQ | 404691073 |
 | Blog | https://wdft.com |
 
+### Remarks
+The notes only sort out some important and difficult-to-understand knowledge points and self-summary in Golang, and for long-term updates, the basic knowledge is not covered, please refer to the official website. If necessary, please contact me at any time to communicate and discuss, welcome to join the open source world.
 
 ###### I love Go，Simple, efficient, practical, engineered ...
 
