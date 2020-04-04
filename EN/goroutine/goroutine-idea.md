@@ -1,4 +1,4 @@
-# goroutine
+# goroutine  persional idea
 
 ### Golang does not use OS layer process but USES language level (Goroutine) to deal with concurrency & parallel Task Task scheme (for business) personal thinking and practical thinking -Jack Liu qiu
 

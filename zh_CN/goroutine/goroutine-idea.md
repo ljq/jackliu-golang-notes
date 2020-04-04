@@ -1,4 +1,4 @@
-# goroutine
+# goroutine 个人的idea思考小结
 
 ###  Golang不使用OS层process而使用语言层面（Goroutine）处理 并发 & 并行 Task任务方案(针对业务来说)的个人思考和实践思路随想 ---Jack Liu 秋
 
