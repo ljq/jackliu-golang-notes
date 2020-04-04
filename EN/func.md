@@ -21,6 +21,20 @@ func main() {
 
 ```
 
+##### Go function return alias usage
+
+```
+func foo(a, b int) (c, d int) {
+    c = a / b 
+    d = a % b
+    return
+}
+```
+
+* For simple function bodies
+
+* It has nothing to do with the caller. It is only in the function body. Use the function return value name reasonably to avoid mixing parameters and return value function aliases.
+
 ##### The Go function type implements the interface -- calls the function as an interface
 The function body implements the interface
 The declaration of a function does not directly implement the interface; you need to define the function as a type and then use the type to implement the structure. When a type method is called, the function ontology needs to be called as well.
