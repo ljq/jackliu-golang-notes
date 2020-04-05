@@ -1,6 +1,25 @@
 # pointer
 
 
+### Golang there is no reference to pass parameters, all are value pass
+
+```
+package main
+
+import "fmt"
+
+func main() {
+	var a int
+	var b, c = &a, &a
+	fmt.Println(b, c)   // 0xc0000160d0 0xc0000160d0
+	fmt.Println(&b, &c) // 0xc00000e028 0xc00000e030
+}
+```
+Summary:
+* it is impossible for two variables to share a block of memory in a Golang project, but it is possible to create two variables pointing to the same memory address, which is not the same as two variables sharing a block of memory.
+* Golang is all value passing, value copying or parameter generating a new pointer address to the value of the incoming parameter. Copy the value or manipulate the value of the same parameter through another pointer.
+* Map and Channel not reference.
+
 ### Pointer-based methods
 
 When a function is called, each parameter value is copied. If a function needs to update a variable, or one of the function's parameters is too large, we hope to avoid such a default copy. In this case, we will Need to use pointers. Corresponding to the method we use to update the receiver object here, when the receiver variable itself is relatively large, we can use its pointer instead of the object to declare the method, as follows:
