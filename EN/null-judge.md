@@ -14,3 +14,19 @@
 
 ### You cannot simply determine whether a struct is nil, because it can never be nil. You can determine whether it is empty by returning an error
 ### Common practice in golang standard library: if err! = nil
+
+
+### usual type nil
+
+```
+bool      -> false                              
+numbers -> 0                                 
+string    -> ""      
+
+pointers -> nil
+slices -> nil
+maps -> nil
+channels -> nil
+functions -> nil
+interfaces -> nil
+```

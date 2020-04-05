@@ -14,3 +14,18 @@
 
 ### 不能单纯地判断一个struct是不是nil，因为它永远不可能是nil，可以通过返回一个error来判断是否为空，
 ### golang标准库里的常见做法：if err != nil
+
+### 常见类型的 nil
+
+```
+bool      -> false                              
+numbers -> 0                                 
+string    -> ""      
+
+pointers -> nil
+slices -> nil
+maps -> nil
+channels -> nil
+functions -> nil
+interfaces -> nil
+```
