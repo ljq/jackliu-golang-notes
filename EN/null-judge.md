@@ -15,6 +15,8 @@
 ### You cannot simply determine whether a struct is nil, because it can never be nil. You can determine whether it is empty by returning an error
 ### Common practice in golang standard library: if err! = nil
 
+### In the official document of go, nil is a predefined identifier, representing zero value of pointer, channel, function, interface, map or slice, not a reserved keyword of go
+### Nil can only be assigned to a variable of type pointer, channel, func, interface, map or slice (non base type) otherwise, panic will be raised
 
 ### usual type nil
 
