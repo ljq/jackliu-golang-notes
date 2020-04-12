@@ -1,5 +1,15 @@
 # struct
 
+Structure address:
+Pointer address of a struct variable == pointer address of the first element of the struct.
+
+# structure sequence number notes
+
+golang USES gob to serialize struct objects to be saved locally:
+**it's important to note that golang USES gob ```"encoding/gob"``` to serialize and there's a little bit of a pit, which is that the fields in the struct have to be exportable which is capital**
+The application scenario where the gob code serializes the struct object to be saved locally I think is that the small application needs to save the data locally (such as configuration files, etc.) so that it doesn't need to be used
+SQL database, you can easily deploy the application.
+
 ### The underlying implementation of the object-oriented Class class is in some ways a structure, and references to objects are pointers, but the language encapsulates them.
 
 The flexibility of Golang's Struct structure (originally derived from C, but different from C):
