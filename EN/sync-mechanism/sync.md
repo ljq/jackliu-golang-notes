@@ -1,6 +1,6 @@
 # sync mechanism
 
 * WaitGroup
-* Mutex
+* Mutex（Read/write lock sync.rwmutex based on Mutex）
 * Cond
 
