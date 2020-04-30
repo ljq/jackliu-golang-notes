@@ -11,7 +11,7 @@
 Use slices as map values
 ```
 mp1: = make (map [int] [] int)
-mp2: = make (map [int] * [] int)
+mp2: = make (map [int] *[] int)
 ```
 
 When only traversing the key KEY, use the following form, without changing the value to the anonymous variable form, ignore the value:
@@ -45,7 +45,7 @@ var mapData sync.Map
 
 
 #Iterate over all key-value pairs in sync.Map
-mapData.Range (func (k, v interface {}) bool {
+mapData.Range (func (k, v interface{}) bool {
     fmt.Println ("list-kv:% v,% v", k, v)
     return true
 })
