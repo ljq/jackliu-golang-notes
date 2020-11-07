@@ -39,6 +39,34 @@ const (
 
 ```
 
+### 反射的结构TypeOf底层结构：
+```
+
+func TypeOf(i interface{}) Type {
+    eface := *(*emptyInterface)(unsafe.Pointer(&i)) // runtime.eface
+    return toType(eface.type)
+}
+
+type Type interface {
+    Align() int
+    FieldAlign() int
+    Method(int) Method
+    MethodByName(string) (Method, bool)
+    NumMethod() int
+    Name() string
+    PkgPath() string
+    Size() uintptr
+    String() string
+    Kind() Kind         //Kind Sign
+    Implements(u Type) bool
+    AssignableTo(u Type) bool
+    ConvertibleTo(u Type) bool
+    Comparable() bool
+    //... 更多字段
+}
+
+```
+
 ### 反射性能的一般原则
 
 基准测试结果的数值分析的一般原则建议：

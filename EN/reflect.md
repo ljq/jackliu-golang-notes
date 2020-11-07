@@ -39,6 +39,34 @@ const (
 
 ```
 
+### Reflected structure TypeOf underlying structure:
+```
+
+func TypeOf(i interface{}) Type {
+     eface := *(*emptyInterface)(unsafe.Pointer(&i)) // runtime.eface
+     return toType(eface.type)
+}
+
+type Type interface {
+     Align() int
+     FieldAlign() int
+     Method(int) Method
+     MethodByName(string) (Method, bool)
+     NumMethod() int
+     Name() string
+     PkgPath() string
+     Size() uintptr
+     String() string
+     Kind() Kind //Kind Sign
+     Implements(u Type) bool
+     AssignableTo(u Type) bool
+     ConvertibleTo(u Type) bool
+     Comparable() bool
+     //... more fields
+}
+
+```
+
 ### General principles of reflection performance
 
 The general principles of numerical analysis of benchmark results suggest:
