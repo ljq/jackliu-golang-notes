@@ -7,7 +7,7 @@
 | :------ | :---------- |
 | Author | Jack Liu |
 | Email | stackgo@163.com |
-| WeChat | laulinux |
+| WeChat | labsec |
 | QQ | 404691073 |
 | Blog | https://wdft.com |
 
