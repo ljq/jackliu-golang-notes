@@ -39,6 +39,53 @@ type handle func (str string)
 
 ```
 
+###### Type aliases and type definitions (Distinction)
+
+Define built-in type definitions prior to Go 1.9:
+```
+type byte uint8
+type rune int32
+```
+
+After Go 1.9, it becomes:
+```
+type byte = uint8
+type rune = int32
+```
+This change is made in conjunction with the type alias.
+
+The definition of a type alias is written as:
+```
+type TypeAlias = Type
+```
+A Type alias specifies that a TypeAlias is an alias to a Type; essentially, a TypeAlias is the same Type as a Type.
+
+```
+package main
+import (
+"fmt"
+)
+// Define NewInt as int
+type NewInt int
+// Use an int as IntAlias
+type IntAlias = int
+func main() {
+// Declare A as type NewInt
+var a NewInt
+// View the type name of A
+fmt.Printf("a type: %T\n", a)
+Declare A2 as type IntAlias
+var a2 IntAlias
+// View the type name of A2
+fmt.Printf("a2 type: %T\n", a2)
+}
+
+// a type: main.NewInt
+// a2 type: int
+
+```
+
+
 ###### Type Switch
 ```
 func Demo (params ... interface (}) {
