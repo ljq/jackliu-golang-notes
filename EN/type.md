@@ -39,7 +39,7 @@ type handle func (str string)
 
 ```
 
-###### Type aliases and type definitions (Distinction)
+###### Type aliases and type definitions **(Distinction)**
 
 Define built-in type definitions prior to Go 1.9:
 ```

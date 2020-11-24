@@ -40,20 +40,26 @@ type handle func(str string)
 
 ```
 
-###### 类型别名和类型定义（区别）
+###### 类型别名和类型定义**（区别）**
 
 在 Go 1.9 版本之前定义内建类型的定义：
+```
 type byte uint8
 type rune int32
+```
 
 而在 Go 1.9 版本之后变为：
+```
 type byte = uint8
 type rune = int32
+```
 这个修改就是配合类型别名而进行的修改。
 
 定义类型别名的写法为：
+```
 type TypeAlias = Type
-类型别名规定：TypeAlias 只是 Type 的别名，本质上 TypeAlias 与 Type 是同一个类型
+```
+类型别名规定：TypeAlias 只是 Type 的别名，本质上 TypeAlias 与 Type 是同一个类型.
 
 ```
 package main
