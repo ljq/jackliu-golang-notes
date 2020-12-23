@@ -27,3 +27,34 @@ This also confirms that many answers often go back to the roots of computer data
 For struct types, the order of the fields is critical. If two struct types contain exactly the same fields, but in a different order or are partially merged, then the two structs are different types!
 
 If the struct field starts with a capital letter, then the field is exported (visible outside the package), which also conforms to the visibility rules of the Go language. So a struct can contain both exported and unexported variables.
+
+
+### struct{} empty structure
+
+* struct{} features
+struct{} is an element free structure type, which is usually used when there is no information storage. The advantage is that the size is 0 and no memory is needed to store values of type struct{}.
+* The difference between struct{} and struct{}{}
+Struct{}{} is a literal, which constructs a struct{} type value, which is also null.
+* Declare as map[string]struct{}
+Since struct{} is empty and does not care about the content, the map is transformed into set
+Map can obtain whether the key exists through the "comma OK" mechanism, for example_ , OK: = map ["key"], if there is no corresponding value, OK is false.
+* Chan struct{}
+can be used as exit of channel
+* Two structt{}{}} 
+addresses are equal
+
+```
+var set map[string]struct{}
+// Initialize the set
+set = make(map[string]struct{})
+// Add some values to the set:
+set["one"] = struct{}{}
+set["two"] = struct{}{}
+// Check if a value is in the map:
+A kind of , ok := set["one"]
+//output true
+fmt.Println ("Is one in the map?", ok)
+A kind of , ok = set["three"]
+//output  false
+fmt.Println ("Is three in the map?", ok)
+```
