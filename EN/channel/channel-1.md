@@ -74,6 +74,11 @@ If the coroutine only writes to a channel, the channel is declared as write-only
 If the coroutine only has a read operation on a channel, the channe is declared read-only.
 
 ```
+onlyread := make(<-chan int) //create only read channel
+onlywrite := make(chan<- int) //create only write channel
+```
+
+```
 // Only the generator writes outCh and returns the statement
 // <-chan int, can prevent other coroutines from using this channel indiscriminately, causing hidden bugs
 func generator (int n) <-chan int {

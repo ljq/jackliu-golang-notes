@@ -74,6 +74,11 @@ select可以同时监控多个通道的情况，只处理未阻塞的case。当�
 如果协程对某个channel只有读操作，则这个channe声明为只读。
 
 ```
+chonlyread := make(<-chan int) //创建只读channel
+chonlywrite := make(chan<- int) //创建只写channel
+```
+
+```
 // 只有generator进行对outCh进行写操作，返回声明
 // <-chan int，可以防止其他协程乱用此通道，造成隐藏bug
 func generator(int n) <-chan int {
