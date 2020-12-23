@@ -5,7 +5,12 @@
 
 * Channle essential data structure pipeline queue, data is first-in first-out.
 * With ** thread safety mechanism **, when multiple go programs are accessed, no shackles are needed, which means that the channel itself is thread safe.
-* Channels are typed.
+* channel are typed.
+* Notes for closed channel:
+  - 1. Sending another value on a closed channel causes a panic.
+  - 2. Receiving a closed channel will get the value until the channel is empty.
+  - 3. Performing a receive operation on a closed channel with no value will result in a zero value of the corresponding type.
+  - 4. Closing a closed ** channel causes panic.
 
 ### channel traversal mode
 
@@ -68,7 +73,7 @@ break
 Notes on traversal method:
 Summary: Through the above verification, in order to ensure the robustness of the program, when designing the program, it is best to read and write the channel separately in the sub-go process. After writing the data, remember to close the channel, so as to avoid blocking and cause the main program to crash, and at the same time capture the subroutine error information.
 
-* Channels do not need to be closed as often as files. Only when you do not have any data to send, or you want to explicitly end the range loop, etc., do you close the channel;
+* channel do not need to be closed as often as files. Only when you do not have any data to send, or you want to explicitly end the range loop, etc., do you close the channel;
 * After closing the channel, it is impossible to send data to the channel again (after a panic error is caused, the receiver immediately returns zero);
 * After closing the channel, you can continue to receive data from the channel;
 * For nil channel, no matter sending or receiving, it will be blocked.

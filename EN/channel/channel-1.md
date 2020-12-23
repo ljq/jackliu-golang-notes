@@ -53,11 +53,11 @@ The results and meaning of ok:
 -`true`: read the channel data, not sure if it is closed, maybe the channel has saved data, but the channel is closed
 -`false`: The channel is closed and no data is read.
 
-* 3. Use select to handle multiple channels
+* 3. Use select to handle multiple channel
 Scenes
-When multiple channels need to be processed simultaneously, but only the channel that occurs first is processed
+When multiple channel need to be processed simultaneously, but only the channel that occurs first is processed
 
-Select can monitor the situation of multiple channels at the same time, and only handle unblocked cases. When the channel is nil, the corresponding case is always blocked, regardless of reading or writing. Special attention: Under normal circumstances, writing to the nil channel is panic.
+Select can monitor the situation of multiple channel at the same time, and only handle unblocked cases. When the channel is nil, the corresponding case is always blocked, regardless of reading or writing. Special attention: Under normal circumstances, writing to the nil channel is panic.
 
 
 * 4. Use the channel statement to control read and write permissions
@@ -95,11 +95,11 @@ func consumer (inCh <-chan int) {
 }
 ```
 
-* 5. Use buffered channels to enhance concurrency
+* 5. Use buffered channel to enhance concurrency
 Scenes
 asynchronous
 
-There are buffer channels for multiple coroutines to process at the same time, which can improve concurrency to a certain extent.
+There are buffer channel for multiple coroutines to process at the same time, which can improve concurrency to a certain extent.
 usage
 ```
 // no buffer
@@ -149,7 +149,7 @@ All coroutines that read ch will receive the close (ch) signal
 
 * 9. Use chan struct {} as signal channel
 Scenes
-Use channels to pass signals instead of data
+Use channel to pass signals instead of data
 
 When there is no data to pass, pass an empty struct
 
