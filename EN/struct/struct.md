@@ -47,14 +47,18 @@ addresses are equal
 var set map[string]struct{}
 // Initialize the set
 set = make(map[string]struct{})
+
 // Add some values to the set:
 set["one"] = struct{}{}
 set["two"] = struct{}{}
+
 // Check if a value is in the map:
-A kind of , ok := set["one"]
+
 //output true
-fmt.Println ("Is one in the map?", ok)
-A kind of , ok = set["three"]
+_, ok := set["one"]
+fmt.Println("Is one in the map?", ok)
+
 //output  false
-fmt.Println ("Is three in the map?", ok)
+_, ok = set["three"]
+fmt.Println("Is three in the map?", ok)
 ```

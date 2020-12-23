@@ -50,13 +50,13 @@ set["one"] = struct{}{}
 set["two"] = struct{}{}
 
 // Check if a value is in the map:
-_, ok := set["one"]
 
 //output true
+_, ok := set["one"]
 fmt.Println("Is one in the map?", ok)
-_, ok = set["three"]
 
 //output  false
+_, ok = set["three"]
 fmt.Println("Is three in the map?", ok)
 ```
 
