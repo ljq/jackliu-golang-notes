@@ -16,9 +16,9 @@
 | Blog | https://wdft.com |
 
 #### zh_CN 中文
-[README_CN](https://github.com/iotd/jackliu-golang-notes/tree/master/zh_CN)
+[README_CN](https://github.com/ljq/jackliu-golang-notes/tree/master/zh_CN)
 
 #### EN English Documents
-[English Documents](https://github.com/iotd/jackliu-golang-notes/tree/master/EN)
+[English Documents](https://github.com/ljq/jackliu-golang-notes/tree/master/EN)
 
 
