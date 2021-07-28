@@ -17,7 +17,7 @@ mp2 := make(map[int]*[]int)
 只遍历键KEY时，使用下面的形式,无须将值改为匿名变量形式，忽略值即可:  
 ```
 for key := range mapData {
-    //Code ...
+    // Code ...
 }
 ```
 
