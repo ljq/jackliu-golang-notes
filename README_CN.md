@@ -21,4 +21,100 @@
 #### EN English Documents
 [English Documents](https://github.com/ljq/jackliu-golang-notes/tree/master/EN)
 
+#### Documents List
 
+```
+├── EN
+│   ├── Composite
+│   │   └── polymorphism.md
+│   ├── channel
+│   │   ├── channel-1.md
+│   │   └── channel.md
+│   ├── defer.md
+│   ├── done-mode.jpg
+│   ├── func.md
+│   ├── goroutine
+│   │   ├── goroutine-idea.md
+│   │   └── goroutine.md
+│   ├── init.md
+│   ├── interface.md
+│   ├── json.md
+│   ├── make-new.md
+│   ├── map.md
+│   ├── method.md
+│   ├── null-judge.md
+│   ├── package
+│   │   ├── testing
+│   │   │   └── testing.md
+│   │   └── time.md
+│   ├── pointer
+│   │   └── pointer.md
+│   ├── printf.md
+│   ├── reflect.md
+│   ├── select
+│   ├── silce.md
+│   ├── skills
+│   │   ├── chain-operation.md
+│   │   └── func-value-expression
+│   │       └── func-value.md
+│   ├── sql-connection-pool.jpg
+│   ├── string.md
+│   ├── struct
+│   │   ├── struct-method-receiver.md
+│   │   └── struct.md
+│   ├── switch.md
+│   ├── sync-mechanism
+│   │   └── sync.md
+│   ├── tool-pprof.md
+│   └── type.md
+├── LICENSE
+├── README.md
+├── README_CN.md
+└── zh_CN
+    ├── Composite
+    │   └── polymorphism.md
+    ├── channel
+    │   ├── channel-1.md
+    │   └── channel.md
+    ├── defer.md
+    ├── done-mode.jpg
+    ├── func.md
+    ├── goroutine
+    │   ├── goroutine-idea.md
+    │   └── goroutine.md
+    ├── init.md
+    ├── interface.md
+    ├── json.md
+    ├── make-new.md
+    ├── map.md
+    ├── method.md
+    ├── null-judge.md
+    ├── package
+    │   ├── testing
+    │   │   └── testing.md
+    │   └── time.md
+    ├── pointer
+    │   └── pointer.md
+    ├── printf.md
+    ├── reflect.md
+    ├── release-versions
+    │   └── differences-1.13.md
+    ├── select
+    ├── silce.md
+    ├── skills
+    │   ├── chain-operation.md
+    │   └── func-value-expression
+    │       └── func-value.md
+    ├── sql-connection-pool.jpg
+    ├── string.md
+    ├── struct
+    │   ├── struct-method-receiver.md
+    │   └── struct.md
+    ├── switch.md
+    ├── sync-mechanism
+    │   └── sync.md
+    ├── tool-pprof.md
+    └── type.md
+
+25 directories, 66 files
+```
