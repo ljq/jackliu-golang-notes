@@ -15,11 +15,8 @@
 | QQ | 404691073 |
 | Blog | https://wdft.com |
 
-#### zh_CN 中文
-[README_CN](https://github.com/ljq/jackliu-golang-notes/tree/master/zh_CN)
-
-#### EN English Documents
-[English Documents](https://github.com/ljq/jackliu-golang-notes/tree/master/EN)
+#### 语言文档
+[English](https://github.com/ljq/jackliu-golang-notes/tree/master/EN)
 
 #### 目录结构
 
