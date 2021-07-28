@@ -24,7 +24,7 @@ The notes only sort out some important and difficult-to-understand knowledge poi
 #### zh_CN 中文
 [README_CN](https://github.com/ljq/jackliu-golang-notes/tree/master/zh_CN)
 
-#### Documents List
+#### Directory structure
 
 ```
 ├── EN

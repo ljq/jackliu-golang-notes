@@ -21,7 +21,7 @@
 #### EN English Documents
 [English Documents](https://github.com/ljq/jackliu-golang-notes/tree/master/EN)
 
-#### Documents List
+#### 目录结构
 
 ```
 ├── EN
