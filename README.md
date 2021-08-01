@@ -69,7 +69,7 @@ The notes only sort out some important and difficult-to-understand knowledge poi
 │   └── type.md
 ├── LICENSE
 ├── README.md
-├── README_CN.md
+├── README.zh-CN.md
 └── zh_CN
     ├── Composite
     │   └── polymorphism.md

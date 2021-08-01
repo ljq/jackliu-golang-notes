@@ -66,7 +66,7 @@
 │   └── type.md
 ├── LICENSE
 ├── README.md
-├── README_CN.md
+├── README.zh-CN.md
 └── zh_CN
     ├── Composite
     │   └── polymorphism.md
