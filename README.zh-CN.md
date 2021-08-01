@@ -16,7 +16,9 @@
 | Blog | https://wdft.com |
 
 #### 语言文档
-[English](zh-CN)
+[English](EN)
+
+[中文](zh-CN)
 
 #### 目录结构
 
