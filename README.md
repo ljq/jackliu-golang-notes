@@ -19,7 +19,7 @@ The notes only sort out some important and difficult-to-understand knowledge poi
 ###### The world of programming should be pluralistic, free from any one mindset. 
 
 ### Language document
-[简体中文](https://github.com/ljq/jackliu-golang-notes/tree/master/zh_CN)
+[简体中文](README.zh-CN.md)
 
 #### Directory structure
 
@@ -70,7 +70,7 @@ The notes only sort out some important and difficult-to-understand knowledge poi
 ├── LICENSE
 ├── README.md
 ├── README.zh-CN.md
-└── zh_CN
+└── zh-CN
     ├── Composite
     │   └── polymorphism.md
     ├── channel

@@ -16,7 +16,7 @@
 | Blog | https://wdft.com |
 
 #### 语言文档
-[English](https://github.com/ljq/jackliu-golang-notes/tree/master/EN)
+[English](zh-CN)
 
 #### 目录结构
 
@@ -67,7 +67,7 @@
 ├── LICENSE
 ├── README.md
 ├── README.zh-CN.md
-└── zh_CN
+└── zh-CN
     ├── Composite
     │   └── polymorphism.md
     ├── channel
