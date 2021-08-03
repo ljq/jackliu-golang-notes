@@ -111,9 +111,12 @@ func testB()(string) {
 // OLD
 ` ` `
 
-# # # defer summary
+### defer summary
 
-* defer is used to **ensure** that a function call is performed later in a program's execution, usually for purposes of cleanup. defer is often used where e.g. ensure and finally would be used in other languages.
+* defer function value will also hold the parameter value when **pushes the stack, not when executed**.
+
+* defer is the structure statement **added** when the function executes. It is the default, not the specified structure statement.
+
+* defer is used to ensure that the function call executes later in the program execution, usually for cleanup. Defer is often used where it is used in other languages, such as ensure and finally.
 
 * defer in Go is like the C++ destructor; the Go area of C++ "destructors" is for functions, not objects.
-The * defer is the structure statement ** added when the function executes. It is the default, not the specified structure statement.
