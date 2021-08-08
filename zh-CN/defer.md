@@ -120,3 +120,11 @@ func testB()(string) {
 * defer 用于确保函数调用在程序执行的后期执行，通常用于清理。Defer通常用于其他语言中使用的地方，例如ensure和finally。
 
 * Go语言中defer类似于C++中的析构函数，Go语言区域于C++“析构“中针对的的是函数，而不是对象。
+
+* defer可以配合锁的使用来确保锁的释放,但要注意此会延长锁的释放时间。
+
+* 尽量注意以下操作：
+	* 不要在循环里面使用defer，除非你真的确定defer的工作流程
+	* 避免defer中修改函数error返回值，error函数值可以直接在程序的return中修改，defer修改程序返回值error一般用在和recover搭配中。其他情况下不建议defer中修改，避免滥用。
+
+* defer 表达式的函数如果定义在 panic 后面，该函数在panic后则不会执行。

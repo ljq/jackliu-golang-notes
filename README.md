@@ -45,6 +45,7 @@ The notes only sort out some important and difficult-to-understand knowledge poi
 │   ├── map.md
 │   ├── method.md
 │   ├── null-judge.md
+│   ├── panic-recover.md
 │   ├── package
 │   │   ├── testing
 │   │   │   └── testing.md
@@ -91,6 +92,7 @@ The notes only sort out some important and difficult-to-understand knowledge poi
     ├── map.md
     ├── method.md
     ├── null-judge.md
+    ├── panic-recover.md
     ├── package
     │   ├── testing
     │   │   └── testing.md
