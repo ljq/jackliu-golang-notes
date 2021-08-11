@@ -45,11 +45,11 @@ The notes only sort out some important and difficult-to-understand knowledge poi
 │   ├── map.md
 │   ├── method.md
 │   ├── null-judge.md
-│   ├── panic-recover.md
 │   ├── package
 │   │   ├── testing
 │   │   │   └── testing.md
 │   │   └── time.md
+│   ├── panic-recover.md
 │   ├── pointer
 │   │   └── pointer.md
 │   ├── printf.md
@@ -92,11 +92,11 @@ The notes only sort out some important and difficult-to-understand knowledge poi
     ├── map.md
     ├── method.md
     ├── null-judge.md
-    ├── panic-recover.md
     ├── package
     │   ├── testing
     │   │   └── testing.md
     │   └── time.md
+    ├── panic-recover.md
     ├── pointer
     │   └── pointer.md
     ├── printf.md
@@ -120,5 +120,5 @@ The notes only sort out some important and difficult-to-understand knowledge poi
     ├── tool-pprof.md
     └── type.md
 
-25 directories, 66 files
+25 directories, 68 files
 ```

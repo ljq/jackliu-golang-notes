@@ -46,6 +46,7 @@
 │   │   ├── testing
 │   │   │   └── testing.md
 │   │   └── time.md
+│   ├── panic-recover.md
 │   ├── pointer
 │   │   └── pointer.md
 │   ├── printf.md
@@ -92,6 +93,7 @@
     │   ├── testing
     │   │   └── testing.md
     │   └── time.md
+    ├── panic-recover.md
     ├── pointer
     │   └── pointer.md
     ├── printf.md
@@ -115,5 +117,5 @@
     ├── tool-pprof.md
     └── type.md
 
-25 directories, 66 files
+25 directories, 68 files
 ```

@@ -32,32 +32,73 @@ PHP就是c语言实现的一套高级“程序”语言，只不过是这套“�
 
 * struct{} 特点
 struct{}是一个无元素的结构体类型，通常在没有信息存储时使用。优点是大小为0，不需要内存来存储struct {}类型的值。
-* struct{} 和 struct{}{} 区别
-struct{}{}是一个复合字面量(literal)，它构造了一个struct {}类型的值，该值也是空。
 * 声明为声明为map[string]struct{}
 由于struct{}是空，不关心内容，这样map便改造为set
 map可以通过“comma ok”机制来获取该key是否存在,例如_, ok := map["key"],如果没有对应的值,ok为false。
 * chan struct{}：可以用作通道的退出
+
+### struct{}{} 复合字面量的注意事项
+
+* struct {}
+struct {}是一个**无元素的结构体类型**，通常在没有信息存储时使用。
+优点是大小为0，不需要内存来存储struct{}类型的值。
+* struct{}{}
+struct{}{}是一个**复合字面量**，它构造了一个**struct{}类型的值**，该值也是空。
 * 两个structt{}{}地址相等
 
 ```
-var set map[string]struct{}
-// Initialize the set
-set = make(map[string]struct{})
+package main
 
-// Add some values to the set:
-set["one"] = struct{}{}
-set["two"] = struct{}{}
+import "fmt"
 
-// Check if a value is in the map:
+type idBval struct {
+	Id int
+}
 
-//output true
-_, ok := set["one"]
-fmt.Println("Is one in the map?", ok)
+func main() {
+	idA := struct{}{}
+	fmt.Printf("idA: %T and %v \n\n", idA, idA)
 
-//output  false
-_, ok = set["three"]
-fmt.Println("Is three in the map?", ok)
+	idB := idBval{
+		1,
+	}
+	idB.Id = 2
+	fmt.Printf("idB: %T and %v \n\n", idB, idB)
+
+	idC := struct {
+		Id int
+	}{
+		1,
+	}
+	fmt.Printf("idC: %T and %v \n\n", idC, idC)
+
+	mapD := make(map[string]struct{})
+	mapD["mapD"] = struct{}{}
+	_, ok := mapD["mapD"]
+	fmt.Printf("mapD['mapD'] is %v \n\n", ok)
+
+	sliceE := make([]interface{}, 2)
+	sliceE[0] = 1
+	sliceE[1] = struct{}{}
+	fmt.Printf("idE: %T and %v \n\n", sliceE, sliceE)
+
+}
+
+```
+
+Output：
+```
+
+idA: struct {} and {} 
+
+idB: main.idBval and {2} 
+
+idC: struct { Id int } and {1} 
+
+mapD['mapD'] is true 
+
+idE: []interface {} and [1 {}] 
+
 ```
 
 
