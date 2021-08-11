@@ -41,7 +41,7 @@ The map can obtain the existence of the key through the "comma ok" mechanism, su
 
 * struct {}
 struct {} is a **structure type with no elements**, usually used when there is no information storage.
-The advantage is that the size is 0 and no memory is needed to store the value of struct{} type.
+The advantage：no memory is needed to store the value of struct{} type.
 * struct{}{}
 struct{}{} is a **compound literal**, which constructs a value of **struct{} type**, which is also empty.
 * Two structt{}{} addresses are equal
