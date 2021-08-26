@@ -1,8 +1,8 @@
-# Jack Liu's Golang personal notes summary
+# Jack Liu's Golang personal notes summary 📚
 
-#### Jack Liu's Golang personal notes summary
+#### Jack Liu's Golang personal notes summary 
 
-#### Remark and instruction
+#### Remark and instruction 📝
 
 The focus of the notes is some important and difficult to understand knowledge points and self-summaries in Golang, and it is a long-term update. The basic knowledge is not covered, please refer to the official website. If necessary, you can contact me at any time to discuss and exchange. Welcome to join the open source world.
 
@@ -10,7 +10,7 @@ The focus of the notes is some important and difficult to understand knowledge p
 | Item  | Contact |
 | :------ | :---------- |
 | Author | Jack Liu |
-| Email | stackgo@163.com |
+| 📧 Email | stackgo@163.com |
 | WeChat | labsec |
 | QQ | 404691073 |
 | Blog | https://wdft.com |
