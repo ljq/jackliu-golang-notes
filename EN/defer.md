@@ -113,8 +113,8 @@ func testB()(string) {
 
 ### Precautions for defer usage scenarios
 * **Although defer is suitable for resource release scenarios, it is not suitable for lock release scenarios.**
-Try not to use defer to release the lock and directly release the lock. The code operation of the lock can be ignored in the subsequent code logic, but this method will cause the entire function to be locked. If there is a lot of complicated or waiting, blocking logic behind, it will lead to too long lock holding time, occupying a large amount of resources and affecting performance.
-* The idea of optimization is to split the code logic or functions as much as possible, try to let the lock control only some shared resources, and put aside the defer to control the unlock, avoiding the lock granularity and holding time for too long, resulting in unnecessary resource consumption.
+Try not to use defer to release lock. Although the code logic and mentality related to lock can be reduced in the subsequent code logic, this method will cause the entire function to be locked. If there is a lot of complicated or waiting, blocking logic behind, it will lead to too long lock holding time, occupying a large amount of resources and affecting performance.
+* The idea of optimization is to split the code logic or functions as much as possible, try to let lock control only some shared resources, and put aside the defer to control the unlock, avoiding lock granularity and holding time for too long, resulting in unnecessary resource consumption.
 
 ### defer summary
 
@@ -126,7 +126,7 @@ Try not to use defer to release the lock and directly release the lock. The code
 
 * defer in Go is like the C++ destructor; the Go area of C++ "destructors" is for functions, not objects.
 
-* Defer can be used with the lock to ensure the release of the lock, but it should be noted that this will prolong the release time of the lock.
+* Defer can be used with lock to ensure the release of lock, but it should be noted that this will prolong the release time of lock.
 
 * Try to pay attention to the following operations:
 * Do not use defer in the loop, unless you are really sure about the defer workflow.
