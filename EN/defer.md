@@ -111,6 +111,11 @@ func testB()(string) {
 // OLD
 ` ` `
 
+### Precautions for defer usage scenarios
+* **Although defer is suitable for resource release scenarios, it is not suitable for lock release scenarios.**
+Try not to use defer to release the lock and directly release the lock. The code operation of the lock can be ignored in the subsequent code logic, but this method will cause the entire function to be locked. If there is a lot of complicated or waiting, blocking logic behind, it will lead to too long lock holding time, occupying a large amount of resources and affecting performance.
+* The idea of optimization is to split the code logic or functions as much as possible, try to let the lock control only some shared resources, and put aside the defer to control the unlock, avoiding the lock granularity and holding time for too long, resulting in unnecessary resource consumption.
+
 ### defer summary
 
 * defer function value will also hold the parameter value when **pushes the stack, not when executed**.
@@ -128,3 +133,5 @@ func testB()(string) {
 * Avoid modifying the function error return value in defer. The error function value can be modified directly in the return of the program. Defer modifying the program return value error is generally used in collocation with recover. In other cases, it is not recommended to modify in defer to avoid abuse.
 
 * If the function of the defer expression is defined after panic, the function will not be executed after panic.
+
+* **Although defer is suitable for resource release scenarios, it is not suitable for lock release scenarios.**

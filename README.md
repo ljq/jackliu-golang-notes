@@ -41,6 +41,8 @@ The notes only sort out some important and difficult-to-understand knowledge poi
 │   ├── init.md
 │   ├── interface.md
 │   ├── json.md
+│   ├── lock-mechanism
+│   │   └── lock.md
 │   ├── make-new.md
 │   ├── map.md
 │   ├── method.md
@@ -88,6 +90,8 @@ The notes only sort out some important and difficult-to-understand knowledge poi
     ├── init.md
     ├── interface.md
     ├── json.md
+    ├── lock-mechanism
+    │   └── lock.md
     ├── make-new.md
     ├── map.md
     ├── method.md
@@ -120,5 +124,5 @@ The notes only sort out some important and difficult-to-understand knowledge poi
     ├── tool-pprof.md
     └── type.md
 
-25 directories, 68 files
+A total of 27 directories, 70 files
 ```

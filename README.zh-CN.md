@@ -38,6 +38,8 @@
 │   ├── init.md
 │   ├── interface.md
 │   ├── json.md
+│   ├── lock-mechanism
+│   │   └── lock.md
 │   ├── make-new.md
 │   ├── map.md
 │   ├── method.md
@@ -85,6 +87,8 @@
     ├── init.md
     ├── interface.md
     ├── json.md
+    ├── lock-mechanism
+    │   └── lock.md
     ├── make-new.md
     ├── map.md
     ├── method.md
@@ -117,5 +121,5 @@
     ├── tool-pprof.md
     └── type.md
 
-25 directories, 68 files
+共计 27 目录, 70 个文件
 ```
