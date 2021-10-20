@@ -13,7 +13,7 @@ The focus of the notes is some important and difficult to understand knowledge p
 | 📧 Email | stackgo@163.com |
 | WeChat | labsec |
 | QQ | 404691073 |
-| Blog | https://wdft.com |
+| Blog | defense.ink |
 
 ###### I love Go，Simple, efficient, practical, engineered ...
 

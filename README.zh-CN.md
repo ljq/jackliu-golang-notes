@@ -13,7 +13,7 @@
 | 📧 Email | stackgo@163.com |
 | WeChat | labsec |
 | QQ | 404691073 |
-| Blog | https://wdft.com |
+| Blog | defense.ink |
 
 #### 语言文档
 [English](EN)
