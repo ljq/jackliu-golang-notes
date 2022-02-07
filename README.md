@@ -30,6 +30,7 @@ The focus of the notes is some important and difficult to understand knowledge p
 ├── EN
 │   ├── Composite
 │   │   └── polymorphism.md
+│   ├── append.md
 │   ├── channel
 │   │   ├── channel-1.md
 │   │   └── channel.md
@@ -79,6 +80,7 @@ The focus of the notes is some important and difficult to understand knowledge p
 └── zh-CN
     ├── Composite
     │   └── polymorphism.md
+    ├── append.md
     ├── channel
     │   ├── channel-1.md
     │   └── channel.md
@@ -125,5 +127,5 @@ The focus of the notes is some important and difficult to understand knowledge p
     ├── tool-pprof.md
     └── type.md
 
-A total of 27 directories, 70 files
+27 directories, 72 files
 ```

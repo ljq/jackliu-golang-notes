@@ -26,6 +26,7 @@
 ├── EN
 │   ├── Composite
 │   │   └── polymorphism.md
+│   ├── append.md
 │   ├── channel
 │   │   ├── channel-1.md
 │   │   └── channel.md
@@ -75,6 +76,7 @@
 └── zh-CN
     ├── Composite
     │   └── polymorphism.md
+    ├── append.md
     ├── channel
     │   ├── channel-1.md
     │   └── channel.md
@@ -121,5 +123,5 @@
     ├── tool-pprof.md
     └── type.md
 
-共计 27 目录, 70 个文件
+共计 27 目录, 72 个文件
 ```
