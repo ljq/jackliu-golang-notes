@@ -70,7 +70,7 @@ func main(){
 
 ### defer
 
-** * Avoid using this type of operation as it is not recommended because it is not readable **
+***Avoid using this type of operation as it is not recommended because it is not readable.**
 * If the return value is not declared as a specific variable, defer will not change the return value variable
 
 ```
@@ -112,15 +112,15 @@ func testB()(string) {
 ```
 
 ### Precautions for defer usage scenarios
-* **Although defer is suitable for resource release scenarios, it is not suitable for lock release scenarios.**
+***Although defer is suitable for resource release scenarios, it is not suitable for lock release scenarios.**
 Try not to use defer to release lock. Although the code logic and mentality related to lock can be reduced in the subsequent code logic, this method will cause the entire function to be locked. If there is a lot of complicated or waiting, blocking logic behind, it will lead to too long lock holding time, occupying a large amount of resources and affecting performance.
 * The idea of optimization is to split the code logic or functions as much as possible, try to let lock control only some shared resources, and put aside the defer to control the unlock, avoiding lock granularity and holding time for too long, resulting in unnecessary resource consumption.
 
 ### defer summary
 
-* defer function value will also hold the parameter value when **pushes the stack, not when executed**.
+* defer function value will also hold the parameter value when**pushes the stack, not when executed**.
 
-* defer is the structure statement **added** when the function executes. It is the default, not the specified structure statement.
+* defer is the structure statement**added**when the function executes. It is the default, not the specified structure statement.
 
 * defer is used to ensure that the function call executes later in the program execution, usually for cleanup. Defer is often used where it is used in other languages, such as ensure and finally.
 
@@ -134,4 +134,4 @@ Try not to use defer to release lock. Although the code logic and mentality rela
 
 * If the function of the defer expression is defined after panic, the function will not be executed after panic.
 
-* **Although defer is suitable for resource release scenarios, it is not suitable for lock release scenarios.**
+***Although defer is suitable for resource release scenarios, it is not suitable for lock release scenarios.**

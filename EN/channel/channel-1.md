@@ -18,7 +18,7 @@ There are 3 states of channel:
 
 * nil, uninitialized state, only declared, or manually assigned to nil
 * active, normal channel, readable or writable
-* closed, closed, ** Do not mistakenly believe that after closing the channel, the value of the channel is nil **
+* closed, closed,**Do not mistakenly believe that after closing the channel, the value of the channel is nil**
 * The channel can perform 3 operations: Read, Write, Close
 
 | Operation | nil channel | normal channel | closed channel
@@ -27,7 +27,7 @@ There are 3 states of channel:
 | ch <-blocking | success or blocking | panic |
 | close (ch) panic | Success | panic |
 
-** 3 operations X 3 channel states = 9 scenarios combined **
+**3 operations X 3 channel states = 9 scenarios combined**
 
 
 * 1. Use for range to read channel
@@ -162,7 +162,7 @@ When there is no data to pass, pass an empty struct
 Scenes
 When using channel to transfer structure data
 
-** The channel essentially transfers a copy of the data. The smaller the copied data, the higher the transmission efficiency. The transfer structure pointer is more efficient than the transfer structure
+**The channel essentially transfers a copy of the data. The smaller the copied data, the higher the transmission efficiency. The transfer structure pointer is more efficient than the transfer structure
 
 * 11. Use channel to pass channel
 Scenes

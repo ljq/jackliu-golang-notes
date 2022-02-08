@@ -107,11 +107,11 @@ func Demo (params ... interface (}) {
 Remarks:
 Refer to Go documentation for type description:
 * Named types (simple types), there are type names such as int, int64, float, string, bool. There are also custom named types.
-* Unnamed type (complex type), no type name array slice, map, func () {}, interface {}. But ** chan type is == comparable **.
+* Unnamed type (complex type), no type name array slice, map, func () {}, interface {}. But**chan type is == comparable**.
    * Slice memory is not continuous, and the underlying objects are open.
    * The map memory is not continuous, and the underlying objects are stored independently.
    * chan memory is continuous, single object, can be directly compared;
-* When comparing two named types, the type names must be the same; when comparing named types with unnamed types, ** the underlying types are the same **.
+* When comparing two named types, the type names must be the same; when comparing named types with unnamed types,**the underlying types are the same**.
 * The comparison is based on two principles: 1. the underlying basic type of memory; 2. whether the type itself determines the type or the unstable type;
 
 * Null interface value comparison

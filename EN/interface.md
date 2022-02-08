@@ -43,12 +43,12 @@ if ok {
 var dataSlice [] int = foo ()
 var interfaceSlice [] interface {} = dataSlice
 ```
-**Compile Error**  
+**Compile Error** 
 ```
 cannot use dataSlice (type [] int) as type [] interface {} in assignment
 ```
 Assign any type to interface {}, you cannot assign any type of slice to [] interface {}
- ** Can't ** Assign some [] MyType slices directly to [] interface {}, the data behind them represent different meanings.
+ **Can't**Assign some [] MyType slices directly to [] interface {}, the data behind them represent different meanings.
 
  ```
  //Compile Error
@@ -69,12 +69,12 @@ for i, v: = range t {
 
 
 ###### the reason:
-* [] interface {} type ** Not ** interface {} type, it is a slice, and the type of the slice element is exactly interface {}.
+* [] interface {} type**Not**interface {} type, it is a slice, and the type of the slice element is exactly interface {}.
 * [] interface {} type variables have a specific memory structure, which is determined at compile time. Each interface {} occupies two words, one word is used to store the type of the interface, and the other word is used to store the actual data or a pointer to the data. So behind the [] interface {} type slice of length N is a piece of data of N * 2 word length.
 This is different from a normal [] MyType type slice. The size of the data block behind a [] MyType slice of the same length is N * sizeof (MyType).
 
 ###### How to use:
-If you want to get a container with a list of any type, and convert it to the original data type before indexing the elements in it, you can directly use interface {}. This approach is very general (if ** not compile-time typesafe) and fast.
+If you want to get a container with a list of any type, and convert it to the original data type before indexing the elements in it, you can directly use interface {}. This approach is very general (if**not compile-time typesafe) and fast.
 
 
 ### Interface Type Memory Layout (Principle)
@@ -144,7 +144,7 @@ fmt.Printf ("% T% v", p, p)
 
 The People interface itself, the bottom layer contains two parts, the tab virtual table and the data actually stored in the value;
 ```p: = People (Student {1," Jack "}) // This is legal` ``, the essence:
-** Function call through interface **, the actual operation is actually ```p.tab-> fun [0] (p.data)` ``;
+**Function call through interface**, the actual operation is actually ```p.tab-> fun [0] (p.data)` ``;
 
 ###### Refer to the similarities and differences of virtual tables in Go and C ++:
 * C ++:

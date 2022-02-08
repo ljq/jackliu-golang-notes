@@ -43,12 +43,12 @@ if ok{
 var dataSlice []int = foo()
 var interfaceSlice []interface{} = dataSlice
 ```
-**编译错误**  
+**编译错误** 
 ```
 cannot use dataSlice (type []int) as type []interface { } in assignment  
 ```
 任何类型赋值给interface{}，不能把任何类型的切片赋值到[]interface{}   
- **不能** 直接将某些[]MyType切片赋值给[]interface{}， 他们背后代表的数据意义不同。   
+**不能**直接将某些[]MyType切片赋值给[]interface{}， 他们背后代表的数据意义不同。   
 
  ```
  //编译错误
@@ -69,12 +69,12 @@ for i, v := range t {
 
 
 ###### 原因：
-* []interface{}类型 **不是** interface{}类型， 它是一个切片，切片元素的类型恰好是interface{}。
+* []interface{}类型**不是**interface{}类型， 它是一个切片，切片元素的类型恰好是interface{}。
 * []interface{}类型变量拥有特定的内存结构，这在编译时就已经决定。每个interface{}占两个字（word)，一个字用于存放interface存放的类型，另一个字用于存放实际数据或者是指向数据的指针。于是长度为N的[]interface{}类型切片背后是一个N*2字长的一块数据。   
 这与一般的[]MyType类型切片不同，相同长度的[]MyType切片背后的数据块大小为N*sizeof(MyType)字长。   
 
 ###### 使用方式：
-如果想得到一个元素为任意类型的列表的容器，并且在索引其中元素之前会把它转换为原本的数据类型，可以直接使用interface{}即可。此种方式很通用（如果 **不是编译时类型安全** 的）也很快速。   
+如果想得到一个元素为任意类型的列表的容器，并且在索引其中元素之前会把它转换为原本的数据类型，可以直接使用interface{}即可。此种方式很通用（如果**不是编译时类型安全**的）也很快速。   
 
 
 ### 接口类型内存布局(原理)
@@ -144,7 +144,7 @@ func main() {
 
 People接口本身，底层含有tab虚表和data实际存储的值两部分；    
 ```p := People(Student{1, "Jack"})//此是合法的```，本质：    
-**通过接口进行函数调用** ，实际的操作其实就是```p.tab->fun[0](p.data)```;  
+**通过接口进行函数调用**，实际的操作其实就是```p.tab->fun[0](p.data)```;  
 
 ###### 参考Go和C++的虚表的异同：
 * C++：

@@ -5,7 +5,7 @@
 
 * Panic can be called directly, or it can be caused by a program runtime error.
 
-* Recover is a built-in function to recover from panic. **recover can only play a real role in the function of defer**.
+* Recover is a built-in function to recover from panic.**recover can only play a real role in the function of defer**.
 
 * When no panic occurs, calling recover will return nil without any effect.
 

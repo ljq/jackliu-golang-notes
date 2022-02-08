@@ -40,10 +40,10 @@ The map can obtain the existence of the key through the "comma ok" mechanism, su
 ### struct{}{} compound literal’s Notes
 
 * struct {}
-struct {} is a **structure type with no elements**, usually used when there is no information storage.
+struct {} is a**structure type with no elements**, usually used when there is no information storage.
 The advantage：no memory is needed to store the value of struct{} type.
 * struct{}{}
-struct{}{} is a **compound literal**, which constructs a value of **struct{} type**, which is also empty.
+struct{}{} is a**compound literal**, which constructs a value of**struct{} type**, which is also empty.
 * Two structt{}{} addresses are equal
 
 ```

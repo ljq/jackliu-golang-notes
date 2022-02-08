@@ -57,4 +57,4 @@ a.Name() is converted to (*a).Name()
 ```
 
 
-**Syntax sugar conversion occurs at compile time. **
+**Syntax sugar conversion occurs at compile time.**

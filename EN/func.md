@@ -3,7 +3,7 @@
 ### func（Apply to method）
 
 ##### Go function
-A number is also a type that can be stored in a variable like any other type. Like interfaces, interfaces are a type.
+In Golang, function is also a type and can be stored in variables like any other type. Like interfaces, interfaces are a type.
 
 ```
 package main
@@ -91,7 +91,7 @@ The underlying layer can use various types simultaneously to implement the Handl
 * if the string array is sliced and each item is passed to the function separately, the []T{arg1,arg2} and other similar operations will be performed and initialized again;
 * if the interface{} array slices are scattered and directly passed into the function, the object is no longer created, and the object is directly tried;
 
-# # # the Go... Three dots usage:
+### the Go... Three dots usage:
 
 Variable length function arguments (argument by argument)
 Call the last parameter... T, using several parameters of type T at the end of the argument list.

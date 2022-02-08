@@ -7,18 +7,18 @@ There is a pprof package in go for performance monitoring of the code, which mai
 ```
 #webserver:
 import (
-    "net / http"
-    _ "net / http / pprof"
+    "net/http"
+    _ "net/http/pprof"
 )
 
 #General application (actual application without web interaction)
 import (
-    "net / http"
-    _ "runtime / pprof"
+    "net/http"
+    _ "runtime/pprof"
 )
 ```
 
-Net / http / pprof only uses the runtime / pprof package to encapsulate it and expose it on the http port.
+Net/http/pprof only uses the runtime/pprof package to encapsulate it and expose it on the http port.
 
 
 #### Go tool pprof auxiliary tool installation (graphviz as an example)
@@ -27,7 +27,7 @@ Net / http / pprof only uses the runtime / pprof package to encapsulate it and e
 1.Official download and installation package: http://www.graphviz.org/download/
 Download Stable stable version (.msi)
 2. Configure the PATH system environment variable:
-C: \ Program Files (x86) \ Graphviz2.38 \ bin
+C:\Program Files (x86)\Graphviz2.38\bin
 
 * __Linux (e.g. Centos) __
 
@@ -55,22 +55,22 @@ brew install graphviz
 
 Heap profile:
 ```
-go tool pprof --text http: // localhost: 8080 / debug / pprof / heap
+go tool pprof --text http://localhost:8080/debug/pprof/heap
 ```
 CPU profile:
 ```
-go tool pprof --text http: // localhost: 8080 / debug / pprof / profile
+go tool pprof --text http://localhost:8080/debug/pprof/profile
 ```
 Goroutine blocking profile:
 ```
-go tool pprof --text http: // localhost: 8080 / debug / pprof / block
+go tool pprof --text http://localhost:8080/debug/pprof/block
 ```
 
-1.View the browser through the address in real time: http: // localhost: 8080 / debug / pprof /;
+1.View the browser through the address in real time: http://localhost:8080/debug/pprof /;
 2.Analyze through the generated profile file;
 Select the specified profile compressed gz file (.gz) and use go tool pprof
 ```
-go tool pprof http: // localhost: 8080 / debug / pprof / profile
+go tool pprof http://localhost:8080/debug/pprof/profile
 #Enter the interaction directly after the end:
 (pprof)
   web
@@ -98,7 +98,7 @@ The pprof memory analyzer takes a sampling approach, which only collects informa
 
 * Method 1). When debugging, specify the running parameters, or dynamically adjust the parameters in the running code
 ```
-go tool pprof --text http: // localhost: 8080 / debug / pprof / profile
+go tool pprof --text http://localhost:8080/debug/pprof/profile
 ```
 This command will print a list of functions that consume the most CPU time.
 There are several forms of output available. The most useful are --text, --web and --list. Run "go tool pprof" to get the complete list.
@@ -131,7 +131,7 @@ In actual testing, MacOS is basically empty, and you need to specify parameters.
          gv Visualize graph through gv
          list Output annotated source for functions matching regexp
          pdf Outputs a graph in PDF format
-         peek Output callers / callees of functions matching regexp
+         peek Output callers/callees of functions matching regexp
          png Outputs a graph image in PNG format
          proto Outputs the profile in compressed protobuf format
          ps Outputs a graph in PS format
@@ -169,5 +169,5 @@ In actual testing, MacOS is basically empty, and you need to specify parameters.
    tags tag_regex [-ignore_regex] *
        List tags with key: value matching tag_regex and exclude ignore_regex.
  
-   quit / exit / ^ D
+   quit/exit/^ D
          Exit pprof

@@ -27,7 +27,7 @@ channel存在3种状态：
 | ch <-	阻塞 | 成功或阻塞 | panic |
 | close(ch)	panic |	成功 | panic |
 
-** 3种操作 X 3种channel状态 = 组合9种场景 **
+**3种操作 X 3种channel状态 = 组合9种场景**
 
 
 * 1. 使用for range读channel

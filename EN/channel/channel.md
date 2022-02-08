@@ -4,13 +4,13 @@
 ### Essentials
 
 * Channle essential data structure pipeline queue, data is first-in first-out.
-* With ** thread safety mechanism **, when multiple go programs are accessed, no shackles are needed, which means that the channel itself is thread safe.
+* With**thread safety mechanism**, when multiple go programs are accessed, no shackles are needed, which means that the channel itself is thread safe.
 * channel are typed.
 * Notes for closed channel:
   - 1. Sending another value on a closed channel causes a panic.
   - 2. Receiving a closed channel will get the value until the channel is empty.
   - 3. Performing a receive operation on a closed channel with no value will result in a zero value of the corresponding type.
-  - 4. Closing a closed ** channel causes panic.
+  - 4. Closing a closed**channel causes panic.
 
 ### channel traversal mode
 
@@ -40,7 +40,7 @@ If close (chNo)), the data read more than times is 0 (default value of data).
 
 
 * Assertion method ```if value, ok: = <-ch; ok == true ()` ``
-    -If the writer does not write data, it is not closed. <-ch; ** will block **
+    -If the writer does not write data, it is not closed. <-ch;**will block**
 -If the write end writes data, value saves <-ch the read data. ok is set to true
 -If the write end is closed. value is the default value of the data type. ok is set to false
 
@@ -68,7 +68,7 @@ break
 }
 ```
 
-** Note that when using for-range, the traversed variable assignment pointer address is unchanged! You can solve the special scenarios by declaring new variables in the loop body! **
+**Note that when using for-range, the traversed variable assignment pointer address is unchanged! You can solve the special scenarios by declaring new variables in the loop body!**
 
 Notes on traversal method:
 Summary: Through the above verification, in order to ensure the robustness of the program, when designing the program, it is best to read and write the channel separately in the sub-go process. After writing the data, remember to close the channel, so as to avoid blocking and cause the main program to crash, and at the same time capture the subroutine error information.
