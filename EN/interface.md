@@ -70,11 +70,11 @@ for i, v: = range t {
 
 ###### the reason:
 * [] interface {} type**Not**interface {} type, it is a slice, and the type of the slice element is exactly interface {}.
-* [] interface {} type variables have a specific memory structure, which is determined at compile time. Each interface {} occupies two words, one word is used to store the type of the interface, and the other word is used to store the actual data or a pointer to the data. So behind the [] interface {} type slice of length N is a piece of data of N * 2 word length.
-This is different from a normal [] MyType type slice. The size of the data block behind a [] MyType slice of the same length is N * sizeof (MyType).
+* [] interface {} type variables have a specific memory structure, which is determined at compile time. Each interface {} occupies two words, one word is used to store the type of the interface, and the other word is used to store the actual data or a pointer to the data. So behind the [] interface {} type slice of length N is a piece of data of N*2 word length.
+This is different from a normal [] MyType type slice. The size of the data block behind a [] CustomType slice of the same length is N*sizeof(CustomType).
 
 ###### How to use:
-If you want to get a container with a list of any type, and convert it to the original data type before indexing the elements in it, you can directly use interface {}. This approach is very general (if**not compile-time typesafe) and fast.
+If you want to get a container with a list of any type, and convert it to the original data type before indexing the elements in it, you can directly use interface {}. This approach is very general (if **not compile-time typesafe**) and fast.
 
 
 ### Interface Type Memory Layout (Principle)
@@ -177,7 +177,7 @@ p.tab-> fun [0] (p.data)
 Let the compiler check to make sure that a type implements the interface.
 
 ```
-var _ fmt.Stringer = (* Data) (nil)
+var _ fmt.Stringer = (*Data) (nil)
 ```
 
 In some cases, it can save a lot of time to have a function "implement" an interface directly.
