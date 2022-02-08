@@ -70,7 +70,7 @@ func main(){
 
 ### defer
 
-***Avoid using this type of operation as it is not recommended because it is not readable.**
+* **Avoid using this type of operation as it is not recommended because it is not readable.**
 * If the return value is not declared as a specific variable, defer will not change the return value variable
 
 ```
