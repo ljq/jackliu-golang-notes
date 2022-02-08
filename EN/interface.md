@@ -50,7 +50,7 @@ cannot use dataSlice (type [] int) as type [] interface {} in assignment
 Assign any type to interface {}, you cannot assign any type of slice to [] interface {}
  **Can't**Assign some [] MyType slices directly to [] interface {}, the data behind them represent different meanings.
 
- ```
+```
  //Compile Error
 // t: = [] int {1, 2, 3, 4} wrong
 // var s [] interface {} = t
@@ -61,7 +61,7 @@ s: = make ([] interface (}, len (t))
 for i, v: = range t {
  s [i] = v
 }
- ```
+```
 ###### Interface Conversion
 * Use type inference to determine whether an interface object is a specific interface or type.
 * You can also use switch for batch type judgment. Fallthrough is not supported.
@@ -143,11 +143,17 @@ fmt.Printf ("% T% v", p, p)
 ```
 
 The People interface itself, the bottom layer contains two parts, the tab virtual table and the data actually stored in the value;
-```p: = People (Student {1," Jack "}) // This is legal` ``, the essence:
-**Function call through interface**, the actual operation is actually ```p.tab-> fun [0] (p.data)` ``;
+```
+p: = People (Student {1," Jack "}) // This is legal
+```
+the essence:
+**Function call through interface**, the actual operation is actually
+```
+p.tab-> fun [0] (p.data)
+```
 
 ###### Refer to the similarities and differences of virtual tables in Go and C ++:
-* C ++:
+* C++:
     * C ++ virtual table is generated at compile time. Note: the polymorphism is determined at runtime;
     * Each class creates a method set (virtual table);
     * When the subclass overrides the virtual function of the parent class, the corresponding function pointer in the table is changed to a function implemented by the subclass itself;
@@ -155,7 +161,7 @@ The People interface itself, the bottom layer contains two parts, the tab virtua
     * When faced with multiple inheritance, there will be multiple virtual table pointers in the C ++ object structure, and each virtual table pointer points to a different part of the method set.
 * Go:
     * The virtual table of the Go interface is generated at runtime;
-    * ```p: = People (Student {1," Jack "})` `` generates a virtual table with a People interface corresponding to the Student type and caches it.
+    * ```p: = People (Student {1," Jack "})``` generates a virtual table with a People interface corresponding to the Student type and caches it.
 ###### the reason:
 * Go has no inheritance relationship and uses a combination method, so virtual table initialization cannot be performed (how many types implement a certain interface, and how many interfaces a single type implements, which makes the compiler unable to know.
 * It is natural to choose to generate a virtual table at runtime. When running at runtime, you only need to analyze whether the type implements all the methods of the interface when the interface is needed. This avoids the need to maintain a large number of inheritance and binding relationships. Mental burden, this does not cause too much performance problems.
@@ -165,7 +171,9 @@ The People interface itself, the bottom layer contains two parts, the tab virtua
 
 ### Interface Tips
 Let the compiler check to make sure that a type implements the interface.
-```var _ fmt.Stringer = (* Data) (nil)` ``
+```
+var _ fmt.Stringer = (* Data) (nil)
+```
 
 In some cases, it can save a lot of time to have a function "implement" an interface directly.
 ```

@@ -1,6 +1,6 @@
 # fmt.Printf () format placeholder
 
-### Format character ```fmt.Printf ("% v ", variable)` ``
+### Format character```fmt.Printf ("% v ", variable)```
 
 ```
 # [General placeholder]

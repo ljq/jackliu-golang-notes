@@ -1,7 +1,6 @@
 # func value & func expression
 
-###
-Functions or methods have two characteristics:
+### Functions or methods have two characteristics:
 * 1. The function itself is a type T;
 * 2. Function variables: functions or methods themselves are stored in variables;
 

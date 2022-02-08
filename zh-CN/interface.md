@@ -50,7 +50,7 @@ cannot use dataSlice (type []int) as type []interface { } in assignment
 任何类型赋值给interface{}，不能把任何类型的切片赋值到[]interface{}   
 **不能**直接将某些[]MyType切片赋值给[]interface{}， 他们背后代表的数据意义不同。   
 
- ```
+```
  //编译错误
 //t := []int{1, 2, 3, 4} wrong 
 //var s []interface{} = t 
@@ -61,7 +61,7 @@ s := make([]interface{}, len(t))
 for i, v := range t { 
  s[i] = v 
 }
- ```
+```
 ###### 接口转换
 * 利用类型推断，可判断接口对象是否某个具体的接口或类型。  
 * 还可用 switch 做批量类型判断，不支持 fallthrough。  
@@ -155,7 +155,7 @@ People接口本身，底层含有tab虚表和data实际存储的值两部分；
     * 当面临多继承时，C++对象结构里就会存在多个虚表指针，每个虚表指针指向该方法集的不同部分。
 * Go:
     * Go 接口的虚表是在runtime运行时生成；
-    * ``` p := People(Student{1, "Jack"})```生成People接口对应于Student类型的虚表，并将其缓存。
+    *``` p := People(Student{1, "Jack"})```生成People接口对应于Student类型的虚表，并将其缓存。
 ###### 原因：
 * Go无继承关系，采用的是组合方式，所以不能进行虚表初始化(多少类型实现了某个接口，单个类型到底实现了多少接口这让编译器无从获知.
 * 选择在运行时生成虚表是自然的方案，放到runtime运行时，只要在需要接口的去分析一下类型是否实现了接口的所有方法即可，这样避免了去维护大量继承和绑定关系的心智负担，此并不会带来性能上的太大问题。
@@ -165,7 +165,7 @@ People接口本身，底层含有tab虚表和data实际存储的值两部分；
 
 ### 接口技巧
 让编译器检查，以确保某个类型实现接口。
-``` var _ fmt.Stringer = (*Data)(nil) ```
+``` var _ fmt.Stringer = (*Data)(nil)```
 
 某些时候，让函数直接 "实现" 接口能省不少事。
 ```

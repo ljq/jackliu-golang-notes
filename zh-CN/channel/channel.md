@@ -39,7 +39,7 @@ func main() {
 
 
 
-* 断言方式 ```if  value, ok := <-ch; ok == true {}```
+* 断言方式```if  value, ok := <-ch; ok == true {}```
     -  如果写端没有写数据，也没有关闭。<-ch;**会阻塞**
     -  如果写端写数据， value 保存 <-ch 读到的数据。 ok 被设置为 true
     -  如果写端关闭。 value 为数据类型默认值。ok 被设置为 false

@@ -39,12 +39,18 @@ If close (chNo)), the data read more than times is 0 (default value of data).
 
 
 
-* Assertion method ```if value, ok: = <-ch; ok == true ()` ``
-    -If the writer does not write data, it is not closed. <-ch;**will block**
--If the write end writes data, value saves <-ch the read data. ok is set to true
--If the write end is closed. value is the default value of the data type. ok is set to false
+* Assertion method 
+```
+if value, ok: = <-ch; ok == true ()
+```
+* If the writer does not write data, it is not closed. <-ch;**will block**
+* If the write end writes data, value saves <-ch the read data. ok is set to true
+* If the write end is closed. value is the default value of the data type. ok is set to false
 
-* range method ```for num: = range ch ()` ``
+* range method 
+```
+for num: = range ch ()
+```
 
 ```
 var chNo = make (chan int, 6)

@@ -6,7 +6,7 @@
 # Notes on structure serial number
 
 Golang uses gob to serialize struct objects and save them locally:
-**It is important to note that golang uses gob```"encoding/gob"``` serialization has a small pit, that is, the fields in the struct must be exportable, that is, the first letter is capitalized**
+**It is important to note that golang uses gob ```"encoding/gob"``` serialization has a small pit, that is, the fields in the struct must be exportable, that is, the first letter is capitalized**
 Gob encoding serialized struct objects are saved locally. I think small applications need to save data locally (such as configuration files, etc.), so that they do not need to be used
 sql database, you can easily deploy applications.
 
