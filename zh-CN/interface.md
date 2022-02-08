@@ -90,21 +90,21 @@ runtime.h
 ```
 struct Iface
 {
-	Itab* tab;
-	void* data;
+	Itab *tab;
+	void *data;
 };
 
 struct Itab
 {
-	InterfaceType* inter;
-	Type* type;
+	InterfaceType *inter;
+	Type *type;
 	void (*fun[])(void);
 };
 
 struct Itab
 {
-	InterfaceType* inter;
-	Type* type;
+	InterfaceType *inter;
+	Type *type;
 	void (*fun[])(void);
 };
 
