@@ -36,10 +36,10 @@ func foo(a, b int) (c, d int) {
 * It has nothing to do with the caller. It is only in the function body. Use the function return value name reasonably to avoid mixing parameters and return value function aliases.
 
 ##### The Go function type implements the interface -- calls the function as an interface
-The function body implements the interface
-The declaration of a function does not directly implement the interface; you need to define the function as a type and then use the type to implement the structure. When a type method is called, the function ontology needs to be called as well.
+* Function body implementation interface considerations
+The declaration of a function cannot directly implement the interface. You need to define the function as a type and use the type to implement the structure. When a type method is called, the function body also needs to be called.
 ```
-The // function is defined as a type
+// The function is defined as a type
 Type FuncCaller func(interface{}) // func(interface{}) is defined as type FuncCaller.
 // implements the Invoker Call
 Func (f FuncCaller) Call(p interface{}) {
