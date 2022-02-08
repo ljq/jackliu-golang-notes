@@ -3,7 +3,7 @@
 ### defer Default execution order
 
 The defer method is an in - and out-stack structure.
-` ` `
+```
 package main
 
 import(
@@ -33,12 +33,12 @@ func main(){
 // 3
 // 2
 // 1
-` ` `
+```
 
 ### defer Aborts execution
 
 The defer stack operation after return will not be ignored
-` ` `
+```
 package main
 
 import(
@@ -66,14 +66,14 @@ func main(){
 // output
 // 2
 // 1
-` ` `
+```
 
 ### defer
 
 ** * Avoid using this type of operation as it is not recommended because it is not readable **
 * If the return value is not declared as a specific variable, defer will not change the return value variable
 
-` ` `
+```
 package main
 
 import(
@@ -109,7 +109,7 @@ func testB()(string) {
 // output
 // NEW
 // OLD
-` ` `
+```
 
 ### Precautions for defer usage scenarios
 * **Although defer is suitable for resource release scenarios, it is not suitable for lock release scenarios.**

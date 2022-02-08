@@ -38,7 +38,7 @@ func foo(a, b int) (c, d int) {
 ##### The Go function type implements the interface -- calls the function as an interface
 The function body implements the interface
 The declaration of a function does not directly implement the interface; you need to define the function as a type and then use the type to implement the structure. When a type method is called, the function ontology needs to be called as well.
-` ` `
+```
 The // function is defined as a type
 Type FuncCaller func(interface{}) // func(interface{}) is defined as type FuncCaller.
 // implements the Invoker Call
