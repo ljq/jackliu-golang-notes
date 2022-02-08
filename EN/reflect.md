@@ -73,3 +73,8 @@ The general principles of numerical analysis of benchmark results suggest:
 * Try to avoid reflection when using native code.
 * Buffering reflection value objects in advance can greatly help performance.
 * Avoid reflection function calls. When you really need to call, buffer the function parameter list in advance, and use the return value as little as possible.
+
+### Usage scenario of reflection
+* The main implementation of gRPC is through reflection.
+* Inversion of Control, Dependency Injection
+* Type assertion: determine the actual type of the interface variable at runtime
