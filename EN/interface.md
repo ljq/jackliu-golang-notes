@@ -86,7 +86,8 @@ interface is actually composed of two members in memory
 
 
 The underlying structure of the interface
-runtime.h
+```runtime.h```
+
 ```
 struct Iface
 {
@@ -142,40 +143,45 @@ fmt.Printf ("% T% v", p, p)
 
 ```
 
-The People interface itself, the bottom layer contains two parts, the tab virtual table and the data actually stored in the value;
+The People interface itself, the bottom layer contains two parts, the tab virtual table and the data actually stored in the value
+
 ```
 p: = People (Student {1," Jack "}) // This is legal
 ```
 the essence:
 **Function call through interface**, the actual operation is actually
+
 ```
 p.tab-> fun [0] (p.data)
 ```
 
-###### Refer to the similarities and differences of virtual tables in Go and C ++:
+###### Refer to the similarities and differences of virtual tables in Go and C++:
 * C++:
-    * C ++ virtual table is generated at compile time. Note: the polymorphism is determined at runtime;
-    * Each class creates a method set (virtual table);
-    * When the subclass overrides the virtual function of the parent class, the corresponding function pointer in the table is changed to a function implemented by the subclass itself;
-    * If not, point to the implementation of the parent class;
-    * When faced with multiple inheritance, there will be multiple virtual table pointers in the C ++ object structure, and each virtual table pointer points to a different part of the method set.
+    * C++ virtual table is generated at compile time. Note: the polymorphism is determined at runtime;
+    * Each class creates a method set (virtual table);
+    * When the subclass overrides the virtual function of the parent class, the corresponding function pointer in the table is changed to a function implemented by the subclass itself;
+    * If not, point to the implementation of the parent class;
+    * When faced with multiple inheritance, there will be multiple virtual table pointers in the C++ object structure, and each virtual table pointer points to a different part of the method set.
 * Go:
-    * The virtual table of the Go interface is generated at runtime;
-    * ```p: = People (Student {1," Jack "})``` generates a virtual table with a People interface corresponding to the Student type and caches it.
+    * The virtual table of the Go interface is generated at runtime;
+    * ```p: = People (Student {1," Jack "})``` generates a virtual table with a People interface corresponding to the Student type and caches it.
+
 ###### the reason:
 * Go has no inheritance relationship and uses a combination method, so virtual table initialization cannot be performed (how many types implement a certain interface, and how many interfaces a single type implements, which makes the compiler unable to know.
 * It is natural to choose to generate a virtual table at runtime. When running at runtime, you only need to analyze whether the type implements all the methods of the interface when the interface is needed. This avoids the need to maintain a large number of inheritance and binding relationships. Mental burden, this does not cause too much performance problems.
-* Go interface combination scheme and C ++ do the opposite, in essence, each has advantages and disadvantages.
+* Go interface combination scheme and C++ do the opposite, in essence, each has advantages and disadvantages.
 
 
 
 ### Interface Tips
 Let the compiler check to make sure that a type implements the interface.
+
 ```
 var _ fmt.Stringer = (* Data) (nil)
 ```
 
 In some cases, it can save a lot of time to have a function "implement" an interface directly.
+
 ```
 type Tester interface {
 Do ()
