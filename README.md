@@ -10,9 +10,8 @@ The focus of the notes is some important and difficult to understand knowledge p
 | Item  | Contact |
 | :------ | :---------- |
 | Author | Jack Liu |
-| 📧 Email | stackgo@163.com |
+| 📧 Email | ljqlab@gmail.com |
 | WeChat | labsec |
-| QQ | 404691073 |
 | Blog | defense.ink |
 
 ###### I love Go，Simple, efficient, practical, engineered ...

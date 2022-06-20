@@ -10,9 +10,8 @@
 | Item  | Contact |
 | :------ | :---------- |
 | Author | Jack Liu 秋 |
-| 📧 Email | stackgo@163.com |
+| 📧 Email | ljqlab@gmail.com |
 | WeChat | labsec |
-| QQ | 404691073 |
 | Blog | defense.ink |
 
 #### 语言文档
