@@ -14,8 +14,8 @@ From [Go Proverbs](https://go-proverbs.github.io)
 * Gofmt's style is no one's favorite, yet gofmt is everyone's favorite
 * A little copying is better than a little dependency
 * Syscall must always be guarded with build tags
-* Cgo must always be guarded with build tags
-* Cgo is not Go
+* CGO must always be guarded with build tags
+* CGO is not Go
 * With the unsafe package there are no guarantees
 * Clear is better than clever
 * Reflection is never clear
