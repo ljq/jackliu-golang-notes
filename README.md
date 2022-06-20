@@ -10,7 +10,7 @@ The focus of the notes is some important and difficult to understand knowledge p
 | Item  | Contact |
 | :------ | :---------- |
 | Author | Jack Liu |
-| 📧 Email | ljqlab@gmail.com |
+| 📧 | ljqlab@gmail.com |
 | WeChat | labsec |
 | Blog | defense.ink |
 

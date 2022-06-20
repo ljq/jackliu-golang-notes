@@ -10,7 +10,7 @@
 | Item  | Contact |
 | :------ | :---------- |
 | Author | Jack Liu 秋 |
-| 📧 Email | ljqlab@gmail.com |
+| 📧 | ljqlab@gmail.com |
 | WeChat | labsec |
 | Blog | defense.ink |
 
