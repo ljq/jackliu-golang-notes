@@ -1,4 +1,4 @@
-### Go 谚语（（Rob Pike））
+### Go 谚语（Rob Pike）
 
 #### 出自Go语言之父Rob Pike在2015年分享主题《Go Proverbs[1]》  
 来源 [Go Proverbs](https://go-proverbs.github.io)
