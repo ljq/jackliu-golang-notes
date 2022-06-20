@@ -53,6 +53,7 @@
 │   ├── pointer
 │   │   └── pointer.md
 │   ├── printf.md
+│   ├── proverbs.md
 │   ├── reflect.md
 │   ├── select
 │   │   └── select.md
@@ -104,6 +105,7 @@
     ├── pointer
     │   └── pointer.md
     ├── printf.md
+    ├── proverbs.md
     ├── reflect.md
     ├── release-versions
     │   └── differences-1.13.md
@@ -125,5 +127,5 @@
     ├── tool-pprof.md
     └── type.md
 
-共计 27 目录, 74 个文件
+共计 27 目录, 76 个文件
 ```

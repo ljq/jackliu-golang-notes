@@ -57,6 +57,7 @@ The focus of the notes is some important and difficult to understand knowledge p
 │   ├── pointer
 │   │   └── pointer.md
 │   ├── printf.md
+│   ├── proverbs.md
 │   ├── reflect.md
 │   ├── select
 │   │   └── select.md
@@ -108,6 +109,7 @@ The focus of the notes is some important and difficult to understand knowledge p
     ├── pointer
     │   └── pointer.md
     ├── printf.md
+    ├── proverbs.md
     ├── reflect.md
     ├── release-versions
     │   └── differences-1.13.md
@@ -129,5 +131,5 @@ The focus of the notes is some important and difficult to understand knowledge p
     ├── tool-pprof.md
     └── type.md
 
-27 directories, 74 files
+27 directories, 76 files
 ```
