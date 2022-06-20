@@ -1,6 +1,6 @@
 ### Go 谚语（Rob Pike）
 
-#### 出自Go语言之父Rob Pike在2015年分享主题《Go Proverbs[1]》  
+#### 出自Go语言之父Rob Pike在2015年分享主题&laquo; Go Proverbs[1] &raquo;
 来源 [Go Proverbs](https://go-proverbs.github.io)
 
 #### GO谚语或最佳实践

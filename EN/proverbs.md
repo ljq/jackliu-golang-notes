@@ -1,6 +1,6 @@
 ### Go Proverbs（Rob Pike）
 
-#### "Go Proverbs[1]", a theme shared by Rob Pike, father of Go language, in 2015  
+#### &laquo; Go Proverbs[1] &raquo;, a theme shared by Rob Pike, father of Go language, in 2015  
 From [Go Proverbs](https://go-proverbs.github.io)
 
 #### GO谚语或最佳实践
