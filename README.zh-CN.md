@@ -9,7 +9,7 @@
 #### Jack Liu's contact
 | Item  | Contact |
 | :------ | :---------- |
-| Author | Jack Liu 秋 |
+| Name | Jack Liu 秋 |
 | 📧 | ljqlab@gmail.com |
 | WeChat | labsec |
 | Blog | defense.ink |

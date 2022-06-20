@@ -9,7 +9,7 @@ The focus of the notes is some important and difficult to understand knowledge p
 #### Jack Liu's contact
 | Item  | Contact |
 | :------ | :---------- |
-| Author | Jack Liu |
+| Name | Jack Liu |
 | 📧 | ljqlab@gmail.com |
 | WeChat | labsec |
 | Blog | defense.ink |
