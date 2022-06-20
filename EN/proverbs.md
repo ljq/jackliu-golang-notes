@@ -3,7 +3,7 @@
 #### &laquo; Go Proverbs[1] &raquo;, a theme shared by Rob Pike, father of Go language, in 2015  
 From [Go Proverbs](https://go-proverbs.github.io)
 
-#### GO谚语或最佳实践
+#### GO Proverbs
 
 * Don't communicate by sharing memory, share memory by communicating
 * Concurrency is not parallelism

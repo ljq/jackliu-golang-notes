@@ -3,7 +3,7 @@
 #### 出自Go语言之父Rob Pike在2015年分享主题&laquo; Go Proverbs[1] &raquo;
 来源 [Go Proverbs](https://go-proverbs.github.io)
 
-#### GO谚语或最佳实践
+#### GO谚语
 
 * 不要通过共享内存来通信，通过通信来共享内存  
     Don't communicate by sharing memory, share memory by communicating
