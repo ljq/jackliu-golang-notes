@@ -30,6 +30,7 @@ The focus of the notes is some important and difficult to understand knowledge p
 │   ├── Composite
 │   │   └── polymorphism.md
 │   ├── append.md
+│   ├── buildin-func.md
 │   ├── channel
 │   │   ├── channel-1.md
 │   │   └── channel.md
@@ -82,6 +83,7 @@ The focus of the notes is some important and difficult to understand knowledge p
     ├── Composite
     │   └── polymorphism.md
     ├── append.md
+    ├── buildin-func.md
     ├── channel
     │   ├── channel-1.md
     │   └── channel.md
@@ -130,6 +132,6 @@ The focus of the notes is some important and difficult to understand knowledge p
     ├── tool-pprof.md
     └── type.md
 
-27 directories, 76 files
+27 directories, 78 files
 ```
 

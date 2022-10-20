@@ -26,6 +26,7 @@
 │   ├── Composite
 │   │   └── polymorphism.md
 │   ├── append.md
+│   ├── buildin-func.md
 │   ├── channel
 │   │   ├── channel-1.md
 │   │   └── channel.md
@@ -78,6 +79,7 @@
     ├── Composite
     │   └── polymorphism.md
     ├── append.md
+    ├── buildin-func.md
     ├── channel
     │   ├── channel-1.md
     │   └── channel.md
@@ -126,5 +128,5 @@
     ├── tool-pprof.md
     └── type.md
 
-共计 27 目录, 76 个文件
+共计 27 目录, 78 个文件
 ```
