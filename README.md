@@ -36,8 +36,8 @@ The focus of the notes is some important and difficult to understand knowledge p
 │   │   └── channel.md
 │   ├── defer.md
 │   ├── done-mode.jpg
-│   ├── error-exception
-│   │   └── exception.md
+│   ├── exception-error
+│   │   └── exception-error.md
 │   ├── func.md
 │   ├── goroutine
 │   │   ├── goroutine-idea.md

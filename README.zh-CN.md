@@ -87,8 +87,8 @@
     │   └── channel.md
     ├── defer.md
     ├── done-mode.jpg
-    ├── error-exception
-    │   └── exception.md
+    ├── exception-error
+    │   └── exception-error.md
     ├── func.md
     ├── goroutine
     │   ├── goroutine-idea.md
