@@ -32,8 +32,8 @@
 │   │   └── channel.md
 │   ├── defer.md
 │   ├── done-mode.jpg
-│   ├── error-exception
-│   │   └── exception.md
+│   ├── exception-error
+│   │   └── exception-error.md
 │   ├── func.md
 │   ├── goroutine
 │   │   ├── goroutine-idea.md
@@ -131,7 +131,7 @@
     │   └── sync.md
     ├── tool-pprof.md
     └── type.md
-    
+
 31 directories, 81 files
 共计 31 目录, 81 个文件
 ```
