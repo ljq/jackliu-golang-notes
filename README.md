@@ -36,6 +36,8 @@ The focus of the notes is some important and difficult to understand knowledge p
 │   │   └── channel.md
 │   ├── defer.md
 │   ├── done-mode.jpg
+│   ├── error-exception
+│   │   └── exception.md
 │   ├── func.md
 │   ├── goroutine
 │   │   ├── goroutine-idea.md
@@ -89,6 +91,8 @@ The focus of the notes is some important and difficult to understand knowledge p
     │   └── channel.md
     ├── defer.md
     ├── done-mode.jpg
+    ├── error-exception
+    │   └── exception.md
     ├── func.md
     ├── goroutine
     │   ├── goroutine-idea.md
@@ -132,6 +136,6 @@ The focus of the notes is some important and difficult to understand knowledge p
     ├── tool-pprof.md
     └── type.md
 
-27 directories, 78 files
+31 directories, 81 files
 ```
 
