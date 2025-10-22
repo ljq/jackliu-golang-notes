@@ -39,6 +39,6 @@ The concurrent & parallel programming concept is the norm of future programming 
 At least in the development of company products and projects, Golang is at least the major language of the future, because with the continuous growth of data, it is necessary to select the most suitable technology in terms of performance, reliability and development. Golang is very consistent with this. Golang is not just a simple programming language.  
 The reason for the enduring popularity of the C development language is the pursuit of solving practical problems in the simplest way. Golang is the major development language in the future.  
 ### Personal practice ideas:
-![image](https://github.com/iotd/jackliu-golang-notes/blob/master/EN/done-mode.jpg)
+![image](https://github.com/ljq/jackliu-golang-notes/blob/master/EN/done-mode.jpg)
 
------------------- Liu qiu Date: 2017-05-30
+                                                                  --------- Jaco Liu 秋    Date：2017-05-30
