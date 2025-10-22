@@ -129,7 +129,7 @@ type Student struct {
 }
 
 func (s Student) Do() {
-	s.UserName = "Jack Liu"
+	s.UserName = "Jaco Liu"
 	return
 }
 

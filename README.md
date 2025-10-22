@@ -1,18 +1,18 @@
-# Jack Liu's Golang personal notes summary 📚
+# Jaco Liu's Golang personal notes summary 📚
 
-#### Jack Liu's Golang personal notes summary 
+#### Jaco Liu's Golang personal notes summary 
 
 #### Remark and instruction 📝
 
 The focus of the notes is some important and difficult to understand knowledge points and self-summaries in Golang, and it is a long-term update. The basic knowledge is not covered, please refer to the official website. If necessary, you can contact me at any time to discuss and exchange. Welcome to join the open source world.
 
-#### Jack Liu's contact
+#### Jaco Liu's contact
 | Item  | Contact |
 | :------ | :---------- |
-| Name | Jack Liu |
+| Name | Jaco Liu |
 | 📧 | ljqlab@gmail.com |
 | WeChat | labsec |
-| Blog | defense.ink |
+| Blog | wdft.com |
 
 ###### I love Go，Simple, efficient, practical, engineered ...
 

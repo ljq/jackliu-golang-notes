@@ -1,6 +1,6 @@
 # goroutine  persional idea
 
-### Golang does not use OS layer process but USES language level (Goroutine) to deal with concurrency & parallel Task Task scheme (for business) personal thinking and practical thinking -Jack Liu qiu
+### Golang does not use OS layer process but USES language level (Goroutine) to deal with concurrency & parallel Task Task scheme (for business) personal thinking and practical thinking -Jaco Liu qiu
 
 * 1. Process management using OS level, although the low cost and quick, but the CPU performance overhead is large, Golang through the introduction of Goroutine, construct a SandBox SandBox container type, internal concurrent processing tasks in language level, can be "isolation" in the system level, construct a Goroutine pool at the same time, also can guarantee under the premise of reliable performance, security is enhanced.  
 Overall direction of the large-scale distributed system at present, most are based on OS layer (rather than a system level) in order to achieve a controlled standard control, level the OS kernel CPU overhead to a minimum to ensure that the OS layer smooth running, which also makes represented by the Linux server OS more "focus" do Base underlying fundamental business support.
